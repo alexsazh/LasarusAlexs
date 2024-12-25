@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="WarNav.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="30" Y="15"/>
+        <UsageCount Value="89"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FNavWarning"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="65" Y="13"/>
+        <UsageCount Value="89"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="719"/>
+        <CursorPos X="17" Y="694"/>
+        <UsageCount Value="41"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\inc\ustringh.inc"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="125"/>
+        <CursorPos X="10" Y="141"/>
+        <UsageCount Value="41"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\components\lazutils\lconvencoding.pas"/>
+        <UnitName Value="LConvEncoding"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="7"/>
+        <CursorPos X="22" Y="129"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\components\lazutils\lazutf8.pas"/>
+        <UnitName Value="LazUTF8"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="13"/>
+        <CursorPos X="3" Y="35"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="5" Y="3"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1433" TopLine="1410"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1434" TopLine="1410"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1435" Column="15" TopLine="1416"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="418" Column="21" TopLine="399"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1416" Column="21" TopLine="1388"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="909" Column="18" TopLine="899"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1435" Column="12" TopLine="1416"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1437" Column="7" TopLine="1416"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1429" Column="16" TopLine="1410"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1436" Column="8" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1440" Column="46" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1025" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1026" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1029" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1179" TopLine="1163"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1180" TopLine="1163"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1183" TopLine="1163"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1025" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1026" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1027" TopLine="1009"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1430" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1431" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1434" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1435" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1436" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <Caret Line="1438" TopLine="1417"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="1025" TopLine="1016"/>
+      </Position>
+      <Position>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <Caret Line="107" Column="16" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\lazarus32\components\lazutils\lconvencoding.pas"/>
+        <Caret Line="51" Column="52" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="D:\lazarus32\components\lazutils\lconvencoding.pas"/>
+        <Caret Line="55" Column="27" TopLine="43"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\WINDOWS\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="U_Nav_Warn.pas"/>
+        <Line Value="523"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="24">
+      <Unit0>
+        <Filename Value="WarNav2.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="9" Y="9"/>
+        <UsageCount Value="68"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="U_Nav_Warn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FNavWarning"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="108"/>
+        <CursorPos X="68" Y="108"/>
+        <UsageCount Value="68"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <CursorPos X="46" Y="16"/>
+        <UsageCount Value="44"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../utils/xlib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="30"/>
+        <CursorPos X="9" Y="49"/>
+        <UsageCount Value="26"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="/usr/lib/lazarus/1.6.2/lcl/lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="1592"/>
+        <CursorPos X="3" Y="1644"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../utils/OTypes.pas"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="1813"/>
+        <CursorPos X="13" Y="1845"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="19" Y="28"/>
+        <UsageCount Value="25"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/types.pp"/>
+        <UnitName Value="Types"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="62"/>
+        <CursorPos X="3" Y="81"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/inc/heaph.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="11" Y="73"/>
+        <UsageCount Value="24"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/sysutils/sysunih.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="10" Y="40"/>
+        <UsageCount Value="24"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/unix/sysutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="31" Y="19"/>
+        <UsageCount Value="5"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/unix/bunxh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="77"/>
+        <CursorPos X="5" Y="108"/>
+        <UsageCount Value="22"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/sysutils/filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="134"/>
+        <CursorPos Y="163"/>
+        <UsageCount Value="22"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/unix/bunxovlh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="11" Y="32"/>
+        <UsageCount Value="11"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../utils/win_use.pas"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="19" Y="15"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <UnitName Value="nevautil"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1748"/>
+        <CursorPos X="9" Y="1711"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../utils/Convert.pas"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="52" Y="8"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../utils/blgeo.pas"/>
+        <UnitName Value="BLgeo"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="1890"/>
+        <CursorPos X="16" Y="1909"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../utils/WStrings.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="301"/>
+        <CursorPos X="23" Y="324"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="/usr/lib/lazarus/1.6.2/components/lazutils/lazutf8.pas"/>
+        <UnitName Value="LazUTF8"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="31"/>
+        <CursorPos X="52" Y="174"/>
+        <UsageCount Value="17"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/unix/cwstring.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="43"/>
+        <UsageCount Value="9"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="/usr/lib/lazarus/1.6.2/lcl/graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="1937"/>
+        <CursorPos X="10" Y="1968"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../utils/MINFUN.PAS"/>
+        <UnitName Value="MinFun"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="43" Y="15"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="/usr/lib/lazarus/1.6.2/components/lazutils/lconvencoding.pas"/>
+        <UnitName Value="LConvEncoding"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="99"/>
+        <CursorPos X="10" Y="124"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit23>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="../utils/blgeo.pas"/>
+        <Caret Line="1904" Column="20" TopLine="1876"/>
+      </Position1>
+      <Position2>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="10" Column="3" TopLine="76"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="269" TopLine="245"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="3304" TopLine="484"/>
+      </Position4>
+      <Position5>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="531" Column="18" TopLine="512"/>
+      </Position5>
+      <Position6>
+        <Filename Value="../utils/OTypes.pas"/>
+        <Caret Line="155" Column="48" TopLine="140"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="933" Column="12" TopLine="901"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="12" Column="9"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="910" Column="42" TopLine="893"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="918" Column="44" TopLine="903"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="975" Column="3" TopLine="963"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="983" Column="16" TopLine="964"/>
+      </Position12>
+      <Position13>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="8" Column="2"/>
+      </Position13>
+      <Position14>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1382" TopLine="1362"/>
+      </Position14>
+      <Position15>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1381" Column="19" TopLine="1363"/>
+      </Position15>
+      <Position16>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="12" Column="9"/>
+      </Position16>
+      <Position17>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="10" Column="17"/>
+      </Position17>
+      <Position18>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1382" Column="18" TopLine="1363"/>
+      </Position18>
+      <Position19>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="10" Column="10"/>
+      </Position19>
+      <Position20>
+        <Filename Value="/usr/lib/lazarus/1.6.2/components/lazutils/lconvencoding.pas"/>
+        <Caret TopLine="70"/>
+      </Position20>
+      <Position21>
+        <Filename Value="/usr/lib/lazarus/1.6.2/components/lazutils/lconvencoding.pas"/>
+        <Caret Line="55" Column="25" TopLine="36"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="10" Column="10"/>
+      </Position22>
+      <Position23>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1414" Column="5" TopLine="1377"/>
+      </Position23>
+      <Position24>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1395" Column="9" TopLine="1381"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1400" Column="30" TopLine="1383"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1395" Column="11" TopLine="1382"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1394" Column="15" TopLine="1381"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1400" TopLine="1375"/>
+      </Position28>
+      <Position29>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1667" TopLine="1638"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../utils/NevaUtil.pas"/>
+        <Caret Line="1616" Column="10" TopLine="1598"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

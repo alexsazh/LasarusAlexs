@@ -1,0 +1,190 @@
+object _webmaps1: T_webmaps1
+  Left = 600
+  Height = 441
+  Top = 263
+  Width = 615
+  Caption = 'растры для интернета'
+  ClientHeight = 441
+  ClientWidth = 615
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '2.2.0.4'
+  object PanelDir: TPanel
+    Left = 0
+    Height = 187
+    Top = 31
+    Width = 615
+    Align = alTop
+    Caption = 'PanelDir'
+    ClientHeight = 187
+    ClientWidth = 615
+    TabOrder = 0
+    object Splitter1: TSplitter
+      Left = 424
+      Height = 185
+      Top = 1
+      Width = 2
+      Align = alRight
+      ResizeAnchor = akRight
+    end
+    object FileListBox1: TFileListBox
+      Left = 426
+      Height = 185
+      Top = 1
+      Width = 188
+      Align = alRight
+      Directory = 'D:\lazarus32'
+      FileType = [ftReadOnly, ftArchive, ftNormal]
+      ItemHeight = 0
+      Mask = '*.dm'
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 1
+      Height = 185
+      Top = 1
+      Width = 423
+      Align = alClient
+      Caption = 'Panel2'
+      ClientHeight = 185
+      ClientWidth = 423
+      TabOrder = 1
+      object ShellTreeView1: TShellTreeView
+        Left = 1
+        Height = 183
+        Top = 1
+        Width = 421
+        Align = alClient
+        FileSortType = fstNone
+        TabOrder = 0
+        ObjectTypes = [otFolders]
+      end
+    end
+  end
+  object PanelDir1: TPanel
+    Left = 0
+    Height = 31
+    Top = 0
+    Width = 615
+    Align = alTop
+    ClientHeight = 31
+    ClientWidth = 615
+    TabOrder = 1
+    object LabelDir1: TLabel
+      Left = 4
+      Height = 16
+      Top = 8
+      Width = 73
+      Caption = 'D:\Alex\MSS'
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      ParentFont = False
+    end
+  end
+  object PanelMaps: TPanel
+    Left = 0
+    Height = 223
+    Top = 218
+    Width = 615
+    Align = alClient
+    ClientHeight = 223
+    ClientWidth = 615
+    TabOrder = 2
+    object PanelDir2: TPanel
+      Left = 1
+      Height = 31
+      Top = 1
+      Width = 613
+      Align = alTop
+      ClientHeight = 31
+      ClientWidth = 613
+      TabOrder = 0
+      object LabelDir2: TLabel
+        Left = 16
+        Height = 12
+        Top = 10
+        Width = 9
+        Caption = '...'
+      end
+    end
+    object PanelMaps1: TPanel
+      Left = 1
+      Height = 190
+      Top = 32
+      Width = 174
+      Align = alLeft
+      ClientHeight = 190
+      ClientWidth = 174
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 4
+        Height = 12
+        Top = 10
+        Width = 43
+        Caption = 'Масштаб'
+      end
+      object EditScale: TEdit
+        Left = 3
+        Height = 20
+        Top = 27
+        Width = 56
+        TabOrder = 0
+        Text = '25000'
+      end
+      object ButtonNewMaps: TButton
+        Left = 10
+        Height = 31
+        Top = 64
+        Width = 151
+        Caption = 'Подготовить карты'
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        OnClick = ButtonNewMapsClick
+        ParentFont = False
+        TabOrder = 1
+      end
+      object ButtonRasters: TButton
+        Left = 10
+        Height = 25
+        Top = 118
+        Width = 151
+        Caption = 'Создать растры'
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        OnClick = ButtonRastersClick
+        ParentFont = False
+        TabOrder = 2
+      end
+    end
+    object FileListBox2: TFileListBox
+      Left = 175
+      Height = 190
+      Top = 32
+      Width = 439
+      Align = alClient
+      Directory = 'D:\Alex\lasarus\mss'
+      FileType = [ftReadOnly, ftArchive, ftNormal]
+      ItemHeight = 0
+      Mask = '*.dm'
+      PopupMenu = PopupMenu_Files2
+      TabOrder = 2
+    end
+  end
+  object PopupMenu_Files2: TPopupMenu
+    OnPopup = PopupMenu_Files2Popup
+    Left = 264
+    Top = 376
+    object PopupMenu_Files2_rasters: TMenuItem
+      Caption = 'создать растры'
+      OnClick = PopupMenu_Files2_rastersClick
+    end
+  end
+end

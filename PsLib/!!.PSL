@@ -1,0 +1,28 @@
+
+%-------------------
+
+RunArray {begin end} forall  	%=>KeyIndex
+
+%-------------------
+
+%(main.psl) runlibfile
+%(file.psl) runlibfile
+%(page.psl) runlibfile
+
+
+/MAIN000 /MAIN ld
+
+/MAIN2 
+{
+  /XobFileList ();		%=>Without "XoobListRun"
+  
+%  /BeginOfMain ps pop
+  
+  MAIN000
+}bd
+
+%-------------------
+
+%/VmResetRel {};
+
+%/draw_map_object {counttomark{pop}repeat true} ;

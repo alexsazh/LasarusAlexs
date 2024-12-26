@@ -1,0 +1,71 @@
+object FfrmMain: TFfrmMain
+  Left = 687
+  Height = 100
+  Top = 194
+  Width = 553
+  Caption = 'Задача создания новых карт и зарамочного оформления'
+  ClientHeight = 100
+  ClientWidth = 553
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '2.2.0.4'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 121
+    Caption = 'Создать карту'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button5: TButton
+    Left = 143
+    Height = 25
+    Top = 9
+    Width = 74
+    Caption = 'Паспорт'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button5Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 230
+    Height = 25
+    Top = 9
+    Width = 203
+    Caption = 'Зарамочное оформление'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object ButtScale: TButton
+    Left = 445
+    Height = 25
+    Top = 9
+    Width = 76
+    Caption = 'Линейка'
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    OnClick = ButtScaleClick
+    ParentFont = False
+    TabOrder = 3
+  end
+end

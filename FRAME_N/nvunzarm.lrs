@@ -1,0 +1,98 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFtuneZaram','FORMDATA',[
+  'TPF0'#11'TFtuneZaram'#10'FtuneZaram'#4'Left'#3'&'#1#6'Height'#3#21#1#3'Top'#2
+  +'n'#5'Width'#3#132#2#7'Caption'#6'>'#208#157#208#176#209#129#209#130#209#128
+  +#208#190#208#185#208#186#208#176' '#208#180#208#190#208#191#208#190#208#187
+  +#208#189#208#184#209#130#208#181#208#187#209#140#208#189#209#139#209#133' '
+  +#209#130#208#181#208#186#209#129#209#130#208#190#208#178#12'ClientHeight'#3
+  +#21#1#11'ClientWidth'#3#132#2#5'Color'#7#9'clBtnFace'#10'Font.Color'#7#12'cl'
+  +'WindowText'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#8'OnCrea'
+  +'te'#7#10'FormCreate'#10'LCLVersion'#6#7'2.2.0.4'#0#6'TLabel'#6'Label1'#4'Le'
+  +'ft'#2#24#6'Height'#2#13#3'Top'#2#8#5'Width'#3#188#0#7'Caption'#6'<'#208#173
+  +#208#187#208#181#208#188#208#181#208#189#209#130#209#139' '#208#183#208#176
+  +#209#128#208#176#208#188#208#190#209#135#208#189#208#190#208#179#208#190' '
+  +#208#190#209#132#209#128#208#190#208#188#208#187#208#181#208#189#208#184#209
+  +#143#0#0#7'TDBGrid'#7'DBGrid1'#4'Left'#2#8#6'Height'#3#145#0#3'Top'#2#24#5'W'
+  +'idth'#3'q'#1#5'Color'#7#8'clWindow'#7'Columns'#14#1#13'Title.Caption'#6#6
+  +#208#154#208#158#208#148#5'Width'#2':'#9'FieldName'#6#6#208#154#208#158#208
+  +#148#0#1#13'Title.Caption'#6#6#208#162#208#152#208#159#5'Width'#2#29#9'Field'
+  +'Name'#6#6#208#162#208#152#208#159#0#1#13'Title.Caption'#6#20#208#160#208#176
+  +#208#183#208#188#208#181#209#137#208#181#208#189#208#184#208#181#5'Width'#2
+  +'D'#9'FieldName'#6#7'LOCTYPE'#0#1#13'Title.Caption'#6#22#208#146#208#181#209
+  +#128#209#130#208#184#208#186#208#176#208#187#209#140#208#189#208#190#5'Width'
+  +#2'>'#9'FieldName'#6#22#208#146#208#181#209#128#209#130#208#184#208#186#208
+  +#176#208#187#209#140#208#189#208#190#0#1#13'Title.Caption'#6#26#208#147#208
+  +#190#209#128#208#184#208#183#208#190#208#189#209#130#208#176#208#187#209#140
+  +#208#189#208#190#5'Width'#2''''#9'FieldName'#6#26#208#147#208#190#209#128#208
+  +#184#208#183#208#190#208#189#209#130#208#176#208#187#209#140#208#189#208#190
+  +#0#1#13'Title.Caption'#6#24#208#146#209#139#209#128#208#176#208#178#208#189
+  +#208#184#208#178#208#176#208#189#208#184#208#181#5'Width'#2'N'#9'FieldName'#6
+  +#24#208#146#209#139#209#128#208#176#208#178#208#189#208#184#208#178#208#176
+  +#208#189#208#184#208#181#0#0#10'DataSource'#7#8'DS_Frame'#7'Options'#11#9'dg'
+  +'Editing'#8'dgTitles'#11'dgIndicator'#14'dgColumnResize'#10'dgColLines'#10'd'
+  +'gRowLines'#6'dgTabs'#18'dgAlwaysShowEditor'#15'dgConfirmDelete'#0#8'TabOrde'
+  +'r'#2#0#15'TitleFont.Color'#7#12'clWindowText'#16'TitleFont.Height'#2#245#14
+  +'TitleFont.Name'#6#13'MS Sans Serif'#0#0#12'TDBNavigator'#12'DBNavigator1'#4
+  +'Left'#2'@'#6'Height'#2#25#3'Top'#3#176#0#5'Width'#3#234#0#10'BevelOuter'#7#6
+  +'bvNone'#29'ChildSizing.EnlargeHorizontal'#7#14'crsScaleChilds'#27'ChildSizi'
+  +'ng.EnlargeVertical'#7#14'crsScaleChilds'#28'ChildSizing.ShrinkHorizontal'#7
+  +#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crsScaleChilds'#18'C'
+  +'hildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27'ChildSizing.Contr'
+  +'olsPerLine'#2'd'#12'ClientHeight'#2#25#11'ClientWidth'#3#234#0#10'DataSourc'
+  +'e'#7#8'DS_Frame'#7'Options'#11#0#8'TabOrder'#2#1#14'VisibleButtons'#11#7'nb'
+  +'First'#7'nbPrior'#6'nbNext'#6'nbLast'#8'nbInsert'#8'nbDelete'#6'nbEdit'#6'n'
+  +'bPost'#8'nbCancel'#0#0#0#7'TDBMemo'#9'DBMemText'#4'Left'#3#136#1#6'Height'#2
+  +'!'#3'Top'#2' '#5'Width'#3#185#0#9'DataField'#6#10#208#162#208#181#208#186
+  +#209#129#209#130#10'DataSource'#7#8'DS_Frame'#8'TabOrder'#2#2#0#0#7'TButton'
+  +#7'Button1'#4'Left'#3#136#1#6'Height'#2#25#3'Top'#2'H'#5'Width'#2'y'#7'Capti'
+  +'on'#6#31#208#146#209#139#208#177#208#190#209#128' '#208#186#208#190#208#180
+  +#208#176' '#208#184' '#209#130#208#184#208#191#208#176#7'OnClick'#7#12'Butto'
+  +'n1Click'#8'TabOrder'#2#3#0#0#11'TDataSource'#8'DS_Frame'#7'DataSet'#7#14'SQ'
+  +'LQuery_Frame'#4'Left'#3'0'#1#3'Top'#2'8'#0#0#15'TODBCConnection'#13'ODBCCon'
+  +'nFrame'#9'Connected'#8#11'LoginPrompt'#8#14'KeepConnection'#8#14'Params.Str'
+  +'ings'#1#6#26'DBQ=d:\map\ini\Frame_N.mdb'#6#22'Locale Identifier=1031'#6#17
+  +'ExtendedAnsiSQL=1'#6#12'CHARSET=ansi'#0#11'Transaction'#7#15'SQLTransaction'
+  +'1'#6'Driver'#6#31'Microsoft Access Driver (*.mdb)'#4'Left'#3#136#1#3'Top'#3
+  +#176#0#0#0#9'TSQLQuery'#15'SQLQuery_layout'#15'MaxIndexesCount'#2#4#9'FieldD'
+  +'efs'#14#1#4'Name'#6#9'ID_LAYOUT'#10'Attributes'#11#10'faReadonly'#0#8'DataT'
+  +'ype'#7#9'ftAutoInc'#9'Precision'#2#255#0#1#4'Name'#6#24#208#146#209#139#209
+  +#128#208#176#208#178#208#189#208#184#208#178#208#176#208#189#208#184#208#181
+  +#8'DataType'#7#8'ftString'#9'Precision'#2#255#4'Size'#2#10#0#0#8'Database'#7
+  +#13'ODBCConnFrame'#11'Transaction'#7#15'SQLTransaction1'#11'SQL.Strings'#1#6
+  +',select * from '#208#162#208#184#208#191#208#146#209#139#209#128#208#176#208
+  +#178#208#189#208#184#208#178#208#176#208#189#208#184#209#143#6#0#0#6'Params'
+  +#14#0#6'Macros'#14#0#18'UsePrimaryKeyAsKey'#8#4'Left'#3#184#1#3'Top'#2'p'#0#0
+  +#9'TSQLQuery'#14'SQLQuery_Types'#15'MaxIndexesCount'#2#4#9'FieldDefs'#14#1#4
+  +'Name'#6#7'ID_TYPE'#10'Attributes'#11#10'faReadonly'#0#8'DataType'#7#9'ftAut'
+  ,'oInc'#9'Precision'#2#255#0#1#4'Name'#6#31#208#162#208#152#208#159' '#208#160
+  +#208#144#208#161#208#159#208#158#208#155#208#158#208#150#208#149#208#157#208
+  +#152#208#175#8'DataType'#7#8'ftString'#9'Precision'#2#255#4'Size'#2' '#0#0#8
+  +'Database'#7#13'ODBCConnFrame'#11'Transaction'#7#15'SQLTransaction1'#11'SQL.'
+  +'Strings'#1#6'&select * from '#208#160#208#176#209#129#208#191#208#190#208
+  +#187#208#190#208#182#208#181#208#189#208#184#208#181#6#0#0#6'Params'#14#0#6
+  +'Macros'#14#0#18'UsePrimaryKeyAsKey'#8#4'Left'#3#208#1#3'Top'#3#168#0#0#0#9
+  +'TSQLQuery'#14'SQLQuery_Frame'#15'MaxIndexesCount'#2#4#9'FieldDefs'#14#1#4'N'
+  +'ame'#6#2'ID'#10'Attributes'#11#10'faReadonly'#0#8'DataType'#7#9'ftAutoInc'#9
+  +'Precision'#2#255#0#1#4'Name'#6#7'ID_TYPE'#8'DataType'#7#9'ftInteger'#9'Prec'
+  +'ision'#2#255#0#1#4'Name'#6#9'ID_LAYOUT'#8'DataType'#7#9'ftInteger'#9'Precis'
+  +'ion'#2#255#0#1#4'Name'#6#22#208#146#208#181#209#128#209#130#208#184#208#186
+  +#208#176#208#187#209#140#208#189#208#190#8'DataType'#7#7'ftFloat'#9'Precisio'
+  +'n'#2#255#0#1#4'Name'#6#26#208#147#208#190#209#128#208#184#208#183#208#190
+  +#208#189#209#130#208#176#208#187#209#140#208#189#208#190#8'DataType'#7#7'ftF'
+  +'loat'#9'Precision'#2#255#0#1#4'Name'#6#6#208#154#208#158#208#148#8'DataType'
+  +#7#8'ftString'#9'Precision'#2#255#4'Size'#2#8#0#1#4'Name'#6#10#208#162#208
+  +#181#208#186#209#129#209#130#8'DataType'#7#6'ftMemo'#9'Precision'#2#255#0#1#4
+  +'Name'#6#6#208#162#208#152#208#159#8'DataType'#7#6'ftWord'#9'Precision'#2#255
+  +#0#0#8'Database'#7#13'ODBCConnFrame'#11'Transaction'#7#15'SQLTransaction1'#11
+  +'SQL.Strings'#1#6#164'select ID, ID_TYPE, ID_LAYOUT, ['#208#146#208#181#209
+  +#128#209#130#208#184#208#186#208#176#208#187#209#140#208#189#208#190'], ['
+  +#208#147#208#190#209#128#208#184#208#183#208#190#208#189#209#130#208#176#208
+  +#187#209#140#208#189#208#190'], ['#208#154#208#158#208#148'], ['#208#162#208
+  +#181#208#186#209#129#209#130'], ['#208#162#208#152#208#159'] from ['#208#173
+  +#208#187#208#181#208#188#208#181#208#189#209#130#209#139' '#208#158#209#132
+  +#208#190#209#128#208#188#208#187#208#181#208#189#208#184#208#181']'#6#0#0#6
+  +'Params'#14#0#6'Macros'#14#0#18'UsePrimaryKeyAsKey'#8#4'Left'#3#248#1#3'Top'
+  +#3#224#0#0#0#15'TSQLTransaction'#15'SQLTransaction1'#6'Active'#8#8'Database'
+  +#7#13'ODBCConnFrame'#4'Left'#3'A'#2#3'Top'#3#157#0#0#0#0
+]);

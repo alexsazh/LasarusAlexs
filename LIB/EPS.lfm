@@ -1,0 +1,29 @@
+object Form1: TForm1
+  Left = 200
+  Height = 142
+  Top = 104
+  Width = 417
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  Menu = MainMenu1
+  LCLVersion = '2.2.0.4'
+  object OpenPictureDialog1: TOpenPictureDialog
+    Filter = 'All (*.bmp;*.ico;*.emf;*.wmf)|*.bmp;*.ico;*.emf;*.wmf|Bitmaps (*.bmp)|*.bmp|Icons (*.ico)|*.ico|Enhanced Metafiles (*.emf)|*.emf|Metafiles (*.wmf)|*.wmf'
+    Left = 71
+    Top = 18
+  end
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 16
+    object FileItem: TMenuItem
+      Caption = 'File'
+      object FileOpenItem: TMenuItem
+        Caption = 'Open'
+        OnClick = FileOpenItemClick
+      end
+    end
+  end
+end

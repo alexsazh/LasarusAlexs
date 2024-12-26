@@ -1,0 +1,976 @@
+object FormMain: TFormMain
+  Left = 336
+  Height = 310
+  Top = 266
+  Width = 408
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'MSS (MapScriptSystem): DM -> PS'
+  ClientHeight = 290
+  ClientWidth = 408
+  Color = clBtnFace
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  KeyPreview = True
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  LCLVersion = '2.2.0.4'
+  object TabbedNotebook1: TPageControl
+    Left = 0
+    Height = 290
+    Top = 0
+    Width = 408
+    ActivePage = ts5
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object ts5: TTabSheet
+      Caption = 'Общие'
+      ClientHeight = 264
+      ClientWidth = 400
+      OnContextPopup = ts5ContextPopup
+      object Label4: TLabel
+        Left = 2
+        Height = 13
+        Top = 0
+        Width = 185
+        Caption = 'Классификаторы и предобработчик:'
+      end
+      object ModeGroup: TRadioGroup
+        Left = 0
+        Height = 112
+        Hint = 'Каждый режим сопровождается выводом PS-файла, если тот указан'
+        Top = 120
+        Width = 124
+        AutoFill = True
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 94
+        ClientWidth = 120
+        ItemIndex = 0
+        Items.Strings = (
+          'Просмотр'
+          'GS-Печать'
+          'Конвертирование'
+          'Windows-Печать'
+          'Tiffs for Web -------------'
+        )
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+      end
+      object ColSep: TCheckBox
+        Left = 240
+        Height = 19
+        Hint = 'Получение набора цветоразделенных выходных файлов'
+        Top = 128
+        Width = 93
+        Caption = 'Цветоделение'
+        Color = clBtnFace
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        ParentColor = False
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+      end
+      object GroupBox2: TGroupBox
+        Left = 232
+        Height = 124
+        Top = -4
+        Width = 233
+        ClientHeight = 106
+        ClientWidth = 229
+        TabOrder = 2
+        object Label3: TLabel
+          Left = 6
+          Height = 13
+          Hint = 'PostScript (AI, PS, EPS)'
+          Top = 0
+          Width = 99
+          Caption = 'Выходной PS-файл:'
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object AiFileLabel: TLabel
+          Left = 6
+          Height = 14
+          Top = 8
+          Width = 162
+          AutoSize = False
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clPurple
+          Font.Height = -12
+          Font.Name = 'MS Sans Serif'
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object BtnAi: TBitBtn
+          Left = 6
+          Height = 25
+          Top = 32
+          Width = 73
+          Caption = 'Выбор'
+          Glyph.Data = {
+            76010000424D7601000000000000760000002800000020000000100000000100
+            04000000000000010000120B0000120B00001000000000000000000000000000
+            800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00303333333333
+            333337F3333333333333303333333333333337F33FFFFF3FF3FF303300000300
+            300337FF77777F77377330000BBB0333333337777F337F33333330330BB00333
+            333337F373F773333333303330033333333337F3377333333333303333333333
+            333337F33FFFFF3FF3FF303300000300300337FF77777F77377330000BBB0333
+            333337777F337F33333330330BB00333333337F373F773333333303330033333
+            333337F3377333333333303333333333333337FFFF3FF3FFF333000003003000
+            333377777F77377733330BBB0333333333337F337F33333333330BB003333333
+            333373F773333333333330033333333333333773333333333333
+          }
+          NumGlyphs = 2
+          OnClick = BtnAiClick
+          TabOrder = 0
+        end
+        object OutFileClear: TBitBtn
+          Left = 86
+          Height = 25
+          Hint = 'Отказ от выходного файла'
+          Top = 32
+          Width = 57
+          Cancel = True
+          Caption = 'Очистить'
+          NumGlyphs = 2
+          OnClick = OutFileClearClick
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 1
+        end
+        object TextAsCurves: TCheckBox
+          Left = 6
+          Height = 19
+          Top = 64
+          Width = 126
+          Caption = 'Текст в виде кривых'
+          TabOrder = 2
+        end
+        object CheckShowPage: TCheckBox
+          Left = 6
+          Height = 19
+          Top = 80
+          Width = 132
+          Caption = 'Добавить "showpage"'
+          TabOrder = 3
+        end
+      end
+      object MultiMsGroup: TRadioGroup
+        Left = 128
+        Height = 72
+        Top = 128
+        Width = 81
+        AutoFill = True
+        Caption = 'Вставки'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 54
+        ClientWidth = 77
+        ItemIndex = 0
+        Items.Strings = (
+          'Нет'
+          'Сверху'
+          'Снизу'
+        )
+        TabOrder = 3
+      end
+      object CheckBoxPNG: TCheckBox
+        Left = 136
+        Height = 19
+        Top = 208
+        Width = 43
+        Caption = 'PNG'
+        Checked = True
+        State = cbChecked
+        TabOrder = 4
+      end
+      object Rg_mode: TRadioGroup
+        Left = 0
+        Height = 49
+        Top = 16
+        Width = 217
+        AutoFill = True
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 31
+        ClientWidth = 213
+        ItemIndex = 0
+        Items.Strings = (
+          'Выбранные классификаторы'
+          'Классификаторы по умолчанию'
+        )
+        OnClick = Rg_modeClick
+        TabOrder = 5
+      end
+      object XobList: TListBox
+        Left = 8
+        Height = 41
+        Hint = 'Используйте правую кнопку мыши'
+        Top = 72
+        Width = 223
+        Color = clInfoBk
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        ItemHeight = 0
+        ParentShowHint = False
+        ParentFont = False
+        PopupMenu = XobMenu
+        ShowHint = True
+        TabOrder = 6
+      end
+      object MemoXobInfo: TMemo
+        Left = 16
+        Height = 41
+        Top = 72
+        Width = 209
+        Alignment = taCenter
+        Color = clInfoBk
+        Lines.Strings = (
+          'Используются классификаторы '
+          'по имени из паспорта карты '
+        )
+        TabOrder = 7
+      end
+    end
+    object ts4: TTabSheet
+      Caption = 'Страница карты'
+      ClientHeight = 264
+      ClientWidth = 400
+      object Label7: TLabel
+        Left = 200
+        Height = 13
+        Top = 88
+        Width = 82
+        Caption = 'Обрезные поля:'
+      end
+      object Label8: TLabel
+        Left = 328
+        Height = 13
+        Top = 88
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label9: TLabel
+        Left = 176
+        Height = 13
+        Top = 64
+        Width = 108
+        Caption = 'Префикс EPS-файла:'
+      end
+      object Label2: TLabel
+        Left = 208
+        Height = 13
+        Top = 112
+        Width = 74
+        Caption = 'Код страницы:'
+      end
+      object Label13: TLabel
+        Left = 8
+        Height = 13
+        Top = 96
+        Width = 61
+        Caption = 'Увеличение'
+      end
+      object ButtonPage: TButton
+        Left = 0
+        Height = 25
+        Hint = 'Поиск страницы по номеру'
+        Top = 8
+        Width = 121
+        Caption = 'Вывести страницу'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        OnClick = ButtonPageClick
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+      end
+      object SpinEditPageNumber: TSpinEdit
+        Left = 122
+        Height = 21
+        Top = 8
+        Width = 49
+        MaxValue = 999
+        TabOrder = 1
+        Value = 1
+      end
+      object EditCut: TEdit
+        Left = 288
+        Height = 21
+        Top = 88
+        Width = 33
+        TabOrder = 2
+        Text = '0'
+      end
+      object EditEps: TEdit
+        Left = 288
+        Height = 21
+        Top = 64
+        Width = 81
+        TabOrder = 3
+      end
+      object GroupBox3: TGroupBox
+        Left = 184
+        Height = 57
+        Top = 0
+        Width = 209
+        Caption = 'в карте:'
+        ClientHeight = 39
+        ClientWidth = 205
+        Color = clBtnFace
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 4
+        object PageMapLabel: TLabel
+          Left = 6
+          Height = 14
+          Top = 2
+          Width = 193
+          AutoSize = False
+          Color = clBtnFace
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clPurple
+          Font.Height = -12
+          Font.Name = 'MS Sans Serif'
+          ParentFont = False
+          Transparent = False
+        end
+        object ButtonClear1: TButton
+          Left = 6
+          Height = 25
+          Top = 8
+          Width = 99
+          Caption = 'Текущая карта'
+          OnClick = ButtonClear1Click
+          TabOrder = 0
+        end
+        object BtnPageMap: TBitBtn
+          Left = 118
+          Height = 25
+          Top = 8
+          Width = 81
+          Caption = 'Выбор'
+          Glyph.Data = {
+            76010000424D7601000000000000760000002800000020000000100000000100
+            04000000000000010000120B0000120B00001000000000000000000000000000
+            800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00303333333333
+            333337F3333333333333303333333333333337F33FFFFF3FF3FF303300000300
+            300337FF77777F77377330000BBB0333333337777F337F33333330330BB00333
+            333337F373F773333333303330033333333337F3377333333333303333333333
+            333337F33FFFFF3FF3FF303300000300300337FF77777F77377330000BBB0333
+            333337777F337F33333330330BB00333333337F373F773333333303330033333
+            333337F3377333333333303333333333333337FFFF3FF3FFF333000003003000
+            333377777F77377733330BBB0333333333337F337F33333333330BB003333333
+            333373F773333333333330033333333333333773333333333333
+          }
+          NumGlyphs = 2
+          OnClick = BtnPageMapClick
+          TabOrder = 1
+        end
+      end
+      object PageCode: TEdit
+        Left = 287
+        Height = 21
+        Top = 111
+        Width = 68
+        TabOrder = 5
+        Text = '01000003'
+      end
+      object PageSizeFromBln: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 40
+        Width = 119
+        Caption = 'Размер - из бланка'
+        TabOrder = 6
+      end
+      object RotCheck: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 64
+        Width = 135
+        Caption = 'Страница с поворотом'
+        TabOrder = 7
+      end
+      object EditPageZoom: TEdit
+        Left = 72
+        Height = 21
+        Top = 96
+        Width = 33
+        TabOrder = 8
+        Text = '1'
+      end
+    end
+    object ts3: TTabSheet
+      Caption = 'Участок карты'
+      ClientHeight = 264
+      ClientWidth = 400
+      object Label1: TLabel
+        Left = 118
+        Height = 13
+        Top = 80
+        Width = 46
+        Caption = 'Масштаб'
+      end
+      object Label5: TLabel
+        Left = 0
+        Height = 13
+        Top = 80
+        Width = 61
+        Caption = 'Увеличение'
+      end
+      object ButtonShow: TButton
+        Left = 254
+        Height = 56
+        Hint = 'Выбор участка карты'
+        Top = 2
+        Width = 139
+        Caption = '&Показать участок'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clRed
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        OnClick = ButtonShowClick
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+      end
+      object EditScale: TEdit
+        Left = 179
+        Height = 21
+        Top = 80
+        Width = 57
+        TabOrder = 1
+        Text = '1'
+      end
+      object EditZoom: TEdit
+        Left = 64
+        Height = 21
+        Top = 78
+        Width = 41
+        TabOrder = 2
+        Text = '1'
+      end
+      object ButtonScale: TButton
+        Left = 92
+        Height = 25
+        Top = 103
+        Width = 145
+        Caption = 'Масштаб текущей карты'
+        OnClick = ButtonScaleClick
+        TabOrder = 3
+      end
+      object PortGroup: TRadioGroup
+        Left = 0
+        Height = 75
+        Top = -2
+        Width = 233
+        AutoFill = True
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 57
+        ClientWidth = 229
+        Color = clBtnFace
+        ItemIndex = 0
+        Items.Strings = (
+          'В размерах печатной страницы'
+          'С вычислением увеличения'
+          'С вычислением страницы'
+        )
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 4
+      end
+      object Check_dlltest: TCheckBox
+        Left = 2
+        Height = 19
+        Top = 115
+        Width = 84
+        Caption = 'Check_dlltest'
+        TabOrder = 5
+        Visible = False
+      end
+      object Check_GCX_dm: TCheckBox
+        Left = 254
+        Height = 19
+        Top = 111
+        Width = 121
+        Caption = 'Создать dm_GCX'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+      end
+      object Panel2: TPanel
+        Left = 254
+        Height = 33
+        Top = 65
+        Width = 139
+        ClientHeight = 33
+        ClientWidth = 139
+        TabOrder = 7
+        object ButtonShowMap: TButton
+          Left = 0
+          Height = 25
+          Hint = 'Выбор участка карты'
+          Top = 0
+          Width = 137
+          Caption = 'Вся карта'
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Color = clRed
+          Font.Height = -12
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          OnClick = ButtonShowMapClick
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 0
+        end
+      end
+    end
+    object ts2: TTabSheet
+      Caption = 'Параметры'
+      ClientHeight = 264
+      ClientWidth = 400
+      object Label10: TLabel
+        Left = 208
+        Height = 13
+        Top = 8
+        Width = 114
+        Caption = 'Линеатура растра (lpi):'
+      end
+      object Label11: TLabel
+        Left = 208
+        Height = 13
+        Top = 32
+        Width = 128
+        Caption = 'Угол растра (в 0.1 град.):'
+      end
+      object Mirror: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 40
+        Width = 63
+        Caption = 'Зеркало'
+        TabOrder = 0
+      end
+      object Negativ: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 56
+        Width = 62
+        Caption = 'Негатив'
+        TabOrder = 1
+      end
+      object Markers: TCheckBox
+        Left = 0
+        Height = 19
+        Top = 8
+        Width = 114
+        Caption = 'Угловые маркеры'
+        TabOrder = 2
+      end
+      object lpi: TSpinEdit
+        Left = 336
+        Height = 21
+        Top = 8
+        Width = 41
+        TabOrder = 3
+        Value = 32
+      end
+      object angle: TSpinEdit
+        Left = 336
+        Height = 21
+        Top = 32
+        Width = 41
+        TabOrder = 4
+      end
+      object MarkersOffset: TCheckBox
+        Left = 0
+        Height = 19
+        Hint = 'Величина смещения - в XOB-файле'
+        Top = 24
+        Width = 197
+        Caption = 'Смещение маркеров внутри полей'
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 5
+      end
+      object Panel1: TPanel
+        Left = 208
+        Height = 57
+        Top = 72
+        Width = 185
+        ClientHeight = 57
+        ClientWidth = 185
+        TabOrder = 6
+        object PnumUp: TCheckBox
+          Left = 6
+          Height = 19
+          Top = 30
+          Width = 54
+          Caption = 'вверху'
+          TabOrder = 0
+        end
+        object PrintPNum: TCheckBox
+          Left = 6
+          Height = 19
+          Top = 6
+          Width = 154
+          Caption = 'Печатать номер страницы'
+          TabOrder = 1
+        end
+      end
+      object Rotation: TRadioGroup
+        Left = 0
+        Height = 73
+        Top = 80
+        Width = 161
+        AutoFill = True
+        Caption = 'Поворот (по час. стр.)'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 55
+        ClientWidth = 157
+        ItemIndex = 0
+        Items.Strings = (
+          'Нет'
+          '90 градусов'
+          '180 градусов'
+        )
+        TabOrder = 7
+      end
+    end
+    object ts1: TTabSheet
+      Caption = 'Размеры'
+      ClientHeight = 264
+      ClientWidth = 400
+      object GroupBox1: TGroupBox
+        Left = 0
+        Height = 129
+        Top = 0
+        Width = 400
+        Align = alTop
+        Caption = 'Размеры страницы (мм):'
+        ClientHeight = 111
+        ClientWidth = 396
+        Color = clBtnFace
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 8
+        object Label6: TLabel
+          Left = 6
+          Height = 13
+          Top = 18
+          Width = 29
+          Caption = 'Поля:'
+        end
+        object Label12: TLabel
+          Left = 6
+          Height = 13
+          Top = 42
+          Width = 21
+          Caption = 'Стр:'
+        end
+      end
+      object px0: TEdit
+        Left = 48
+        Height = 21
+        Hint = 'Левые/Правые поля'
+        Top = 32
+        Width = 44
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+        Text = '0'
+      end
+      object py0: TEdit
+        Left = 92
+        Height = 21
+        Hint = 'Верхние/Нижние поля'
+        Top = 32
+        Width = 44
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+        Text = '0'
+      end
+      object ph: TEdit
+        Left = 92
+        Height = 21
+        Hint = 'Высота'
+        Top = 56
+        Width = 44
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 2
+        Text = '297'
+      end
+      object pw: TEdit
+        Left = 48
+        Height = 21
+        Hint = 'Ширина'
+        Top = 56
+        Width = 44
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 3
+        Text = '210'
+      end
+      object SizeGrid: TStringGrid
+        Left = 176
+        Height = 105
+        Top = 8
+        Width = 217
+        Color = clInfoBk
+        ColCount = 4
+        DefaultColWidth = 48
+        DefaultRowHeight = 20
+        FixedCols = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowMoving, goEditing, goRowSelect, goThumbTracking]
+        TabOrder = 4
+        ColWidths = (
+          48
+          49
+          48
+          48
+        )
+      end
+      object GetRow: TButton
+        Left = 144
+        Height = 20
+        Top = 32
+        Width = 25
+        Caption = '<<'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        OnClick = GetRowClick
+        ParentFont = False
+        TabOrder = 5
+      end
+      object DelRow: TButton
+        Left = 144
+        Height = 20
+        Top = 80
+        Width = 25
+        Caption = 'del'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        OnClick = DelRowClick
+        ParentFont = False
+        TabOrder = 6
+      end
+      object PutRow: TButton
+        Left = 144
+        Height = 20
+        Top = 56
+        Width = 25
+        Caption = '>>'
+        Font.CharSet = RUSSIAN_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        OnClick = PutRowClick
+        ParentFont = False
+        TabOrder = 7
+      end
+    end
+  end
+  object OpenMpg: TOpenDialog
+    DefaultExt = '.dm'
+    Filter = '*.dm|*.dm'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist, ofShareAware]
+    Left = 181
+    Top = 177
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.ai'
+    Filter = 'PostScript|*.ps;*.eps'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofCreatePrompt]
+    Left = 26
+    Top = 192
+  end
+  object OpenPs: TOpenDialog
+    Filter = 'PostScript (*.ai;*.ps;*.eps)|*.ai;*.ps;*.eps|*.prn|*.prn|*.*|*.*'
+    Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist]
+    Left = 320
+    Top = 176
+  end
+  object MainMenu1: TMainMenu
+    Left = 132
+    Top = 8
+    object FileItem: TMenuItem
+      Caption = 'Файл'
+      object PSFileItem: TMenuItem
+        Caption = 'PS-файл'
+        HelpContext = 11
+        OnClick = PSFileItemClick
+      end
+      object PSFileExport: TMenuItem
+        Caption = 'PS-файл экспорт...'
+        object PSFileExport_pdf: TMenuItem
+          Caption = 'pdf'
+          OnClick = PSFileExport_pdfClick
+        end
+        object PSFileExport_tif: TMenuItem
+          Caption = 'tif'
+          OnClick = PSFileExport_tifClick
+        end
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object CmdFileItem: TMenuItem
+        Caption = 'CMD-файл'
+        OnClick = CmdFileItemClick
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object DmRepeatItem: TMenuItem
+        Caption = 'Dm-повтор'
+        Visible = False
+        OnClick = DmRepeatItemClick
+      end
+      object MsRepeatItem: TMenuItem
+        Caption = 'Ms-повтор'
+        Visible = False
+        OnClick = MsRepeatItemClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object RastersItem: TMenuItem
+        Caption = 'растры для интернета'
+        OnClick = RastersItemClick
+      end
+    end
+    object OptItem: TMenuItem
+      Caption = 'Параметры'
+      object PsCfgItem: TMenuItem
+        Caption = 'PS'
+        OnClick = PsCfgItemClick
+      end
+      object MapIncludeItem: TMenuItem
+        Caption = 'Использовать прозрачность листов'
+        OnClick = MapIncludeItemClick
+      end
+    end
+    object HelpItem: TMenuItem
+      Caption = 'Справка'
+      object N4: TMenuItem
+        Caption = 'О программе'
+        OnClick = N4Click
+      end
+    end
+  end
+  object XobMenu: TPopupMenu
+    Left = 184
+    Top = 56
+    object XobAddItem: TMenuItem
+      Caption = 'Добавить'
+      OnClick = XobAddItemClick
+    end
+    object XobInsertItem: TMenuItem
+      Caption = 'Вставить'
+      OnClick = XobInsertItemClick
+    end
+    object XobDelItem: TMenuItem
+      Caption = 'Удалить'
+      OnClick = XobDelItemClick
+    end
+    object XobClear: TMenuItem
+      Caption = 'Удалить все'
+      OnClick = XobClearClick
+    end
+    object XobDefault: TMenuItem
+      Caption = 'Добавить стандартные'
+      OnClick = XobDefaultClick
+    end
+  end
+  object FontDialog1: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 240
+    Top = 168
+  end
+  object OpenCMD: TOpenDialog
+    Filter = '*.msc|*.msc|*.*|*.*'
+    Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist]
+    Left = 96
+    Top = 184
+  end
+  object OpenGc: TOpenDialog
+    Filter = '*.gc,*.gcx|*.gc;*.gcx|*.*|*.*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 80
+    Top = 56
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 202
+    Top = 15
+  end
+end

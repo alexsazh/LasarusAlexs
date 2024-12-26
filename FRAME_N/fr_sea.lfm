@@ -1,0 +1,2682 @@
+object FSeaFrm: TFSeaFrm
+  Left = 493
+  Height = 395
+  Top = 238
+  Width = 806
+  Caption = 'Создание морские карты'
+  ClientHeight = 395
+  ClientWidth = 806
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object Label21: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 107
+    Caption = 'вводимых координат'
+  end
+  object Label22: TLabel
+    Left = 16
+    Height = 13
+    Top = 88
+    Width = 87
+    Caption = 'координат карты'
+  end
+  object Label23: TLabel
+    Left = 336
+    Height = 13
+    Top = 352
+    Width = 14
+    Caption = 'H='
+    Visible = False
+  end
+  object Label24: TLabel
+    Left = 8
+    Height = 13
+    Top = 16
+    Width = 147
+    Caption = 'Картографическая проекция'
+  end
+  object Label29: TLabel
+    Left = 264
+    Height = 13
+    Top = 304
+    Width = 80
+    Caption = 'Классификатор'
+  end
+  object Label26: TLabel
+    Left = 272
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = 'DX='
+  end
+  object Label27: TLabel
+    Left = 136
+    Height = 13
+    Top = 40
+    Width = 55
+    Caption = 'Эллипсоид'
+  end
+  object Label28: TLabel
+    Left = 296
+    Height = 13
+    Top = 40
+    Width = 138
+    Caption = 'Элементы ориентирования'
+  end
+  object Label30: TLabel
+    Left = 336
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = 'DY='
+  end
+  object Label31: TLabel
+    Left = 408
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = 'DZ='
+  end
+  object Label32: TLabel
+    Left = 272
+    Height = 13
+    Top = 88
+    Width = 21
+    Caption = 'DX='
+  end
+  object Label34: TLabel
+    Left = 336
+    Height = 13
+    Top = 88
+    Width = 21
+    Caption = 'DY='
+  end
+  object Label35: TLabel
+    Left = 408
+    Height = 13
+    Top = 88
+    Width = 21
+    Caption = 'DZ='
+  end
+  object Label25: TLabel
+    Left = 200
+    Height = 13
+    Top = 352
+    Width = 16
+    Caption = 'мм'
+  end
+  object Label162: TLabel
+    Left = 480
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = 'wX='
+  end
+  object Label163: TLabel
+    Left = 544
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = 'wY='
+  end
+  object Label164: TLabel
+    Left = 616
+    Height = 13
+    Top = 64
+    Width = 21
+    Caption = 'wZ='
+  end
+  object Label165: TLabel
+    Left = 480
+    Height = 13
+    Top = 88
+    Width = 21
+    Caption = 'wX='
+  end
+  object Label166: TLabel
+    Left = 544
+    Height = 13
+    Top = 88
+    Width = 21
+    Caption = 'wY='
+  end
+  object Label167: TLabel
+    Left = 616
+    Height = 13
+    Top = 88
+    Width = 21
+    Caption = 'wZ='
+  end
+  object Label168: TLabel
+    Left = 680
+    Height = 13
+    Top = 64
+    Width = 14
+    Caption = 'm='
+  end
+  object Label169: TLabel
+    Left = 680
+    Height = 13
+    Top = 88
+    Width = 14
+    Caption = 'm='
+  end
+  object Label170: TLabel
+    Left = 16
+    Height = 13
+    Top = 48
+    Width = 44
+    Caption = 'Система'
+  end
+  object RgScale: TRadioGroup
+    Left = 0
+    Height = 81
+    Top = 288
+    Width = 121
+    AutoFill = True
+    Caption = 'Масштаб '
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 63
+    ClientWidth = 117
+    Items.Strings = (
+      'Фиксированный'
+      'Свободный'
+      'По ширине листа'
+    )
+    TabOrder = 18
+  end
+  object Button1: TButton
+    Left = 456
+    Height = 25
+    Top = 296
+    Width = 89
+    Caption = 'Создать карту'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object CBoxSrcCrd: TComboBox
+    Left = 128
+    Height = 21
+    Top = 56
+    Width = 137
+    ItemHeight = 13
+    Items.Strings = (
+      '[KA] Krasovsky 1940'
+      '[WD] WGS 1972'
+      '[HE] Helmert 1906'
+      '[HO] Hough 1960'
+      '[CD] Clark 1880'
+      '[CC] Clark 1866'
+      '[BR] Bessel 1841'
+      '[BN] Bessel-N 1841'
+      '[WE] WGS-1984'
+      '[AA] Airy 1830'
+      '[AM] Modified Airy'
+      '[EA] Everest 1830'
+      '[EE] Everest 1948'
+      '[EC] Everest 1956'
+      '[EB] Everest Brunei'
+      '[EF] Everest Pakistan'
+      '[RF] GRS 1980'
+      '[ID] Indonesian 1974'
+      '[IN] International 1924'
+      '[FA] Modified Fischer 1960'
+      '[SA] South American 1969'
+      '[AN] Australian'
+    )
+    OnChange = CBoxSrcCrdChange
+    TabOrder = 1
+  end
+  object CboxTagCrd: TComboBox
+    Left = 128
+    Height = 21
+    Top = 80
+    Width = 137
+    ItemHeight = 13
+    Items.Strings = (
+      '[KA] Krasovsky 1940'
+      '[WD] WGS 1972'
+      '[HE] Helmert 1906'
+      '[HO] Hough 1960'
+      '[CD] Clark 1880'
+      '[CC] Clark 1866'
+      '[BR] Bessel 1841'
+      '[BN] Bessel-N 1841'
+      '[WE] WGS-1984'
+      '[AA] Airy 1830'
+      '[AM] Modified Airy'
+      '[EA] Everest 1830'
+      '[EE] Everest 1948'
+      '[EC] Everest 1956'
+      '[EB] Everest Brunei'
+      '[EF] Everest Pakistan'
+      '[RF] GRS 1980'
+      '[ID] Indonesian 1974'
+      '[IN] International 1924'
+      '[FA] Modified Fischer 1960'
+      '[SA] South American 1969'
+      '[AN] Australian'
+    )
+    OnChange = CboxTagCrdChange
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 504
+    Height = 25
+    Top = 352
+    Width = 153
+    Caption = 'Тест пересчета'
+    OnClick = Button3Click
+    TabOrder = 3
+    Visible = False
+  end
+  object edH: TEdit
+    Left = 368
+    Height = 21
+    Top = 344
+    Width = 49
+    TabOrder = 4
+    Text = '0'
+    Visible = False
+  end
+  object CmBxPrj: TComboBox
+    Left = 168
+    Height = 21
+    Top = 8
+    Width = 369
+    ItemHeight = 13
+    Items.Strings = (
+      'Нормальная равноугольная цилиндрическая проекция Меркатора'
+      'Поперечная равноугольная цилиндрическая проекция Меркатора'
+      'Поперечная равноугольная цилиндрическая проекция Гаусса'
+      'Нормальная равноугольная коническая проекция'
+      'Азимутальная нормальная гномоническая (центральная) проекция'
+      'Азимутальная поперечная гномоническая (центральная) проекция'
+      'Азимутальная косая гномоническая (центральная) проекция'
+      'Азимутальная косая гномоническая (центральная) проекция (полярные районы)'
+      'Азимутальная нормальная стереографическая  проекция'
+      'Азимутальная поперечная стереографическая  проекция'
+      'Азимутальная косая стереографическая  проекция'
+      'Азимутальная косая стереографическая  проекция (полярные районы)'
+      'Нормальная равнопромежуточная азимутальная проекция Постеля'
+      'Поперечная равнопромежуточная азимутальная проекция Постеля'
+      'Косая равнопромежуточная азимутальная проекция Постеля'
+      'Косая равнопромежуточная азимутальная проекция Постеля (полярные районы)'
+      'Косая равновеликая азимутальная проекция Ламберта'
+      'Азимутальная стереографическая (полюс)'
+    )
+    OnChange = CmBxPrjChange
+    TabOrder = 5
+  end
+  object CmBxScale: TComboBox
+    Left = 120
+    Height = 21
+    Top = 296
+    Width = 121
+    ItemHeight = 13
+    Items.Strings = (
+      'План 1:1 000'
+      'План 1:1 500'
+      'План 1:2 000'
+      'План 1:2 500'
+      'План 1:3 000'
+      'План 1:4 000'
+      'План 1:5 000'
+      'План 1:6 000'
+      'План 1:7 000'
+      'План 1:7 500'
+      'План 1:10 000'
+      'План 1:12 500'
+      'План 1:15 000'
+      'План 1:17 500'
+      'План 1:20 000'
+      'План 1:25 000'
+      'Карта 1:30 000'
+      'Карта 1:37 500'
+      'Карта 1:40 000'
+      'Карта 1:50 000'
+      'Карта 1:75 000'
+      'Карта 1:100 000'
+      'Карта 1:150 000'
+      'Карта 1:200 000'
+      'Карта 1:250 000'
+      'Карта 1:300 000'
+      'Карта 1:500 000'
+      'Карта 1:750 000'
+      'Карта 1:1 000 000'
+      'Карта 1:1 500 000'
+      'Карта 1:2 000 000'
+      'Карта 1:2 500 000'
+      'Карта 1:3 000 000'
+      'Карта 1:5 000 000'
+      'Карта 1:1 0000 000'
+    )
+    TabOrder = 6
+  end
+  object EdObj: TEdit
+    Left = 352
+    Height = 21
+    Top = 296
+    Width = 73
+    TabOrder = 7
+  end
+  object Button7: TButton
+    Left = 424
+    Height = 25
+    Top = 296
+    Width = 25
+    Caption = '...'
+    OnClick = Button7Click
+    TabOrder = 8
+  end
+  object meSrcDX: TMaskEdit
+    Left = 296
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 9
+    SpaceChar = '_'
+  end
+  object meSrcDY: TMaskEdit
+    Left = 360
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 10
+    SpaceChar = '_'
+  end
+  object meSrcDZ: TMaskEdit
+    Left = 432
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 11
+    SpaceChar = '_'
+  end
+  object meTagdx: TMaskEdit
+    Left = 296
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 12
+    SpaceChar = '_'
+  end
+  object meTagdy: TMaskEdit
+    Left = 360
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 13
+    SpaceChar = '_'
+  end
+  object meTagdz: TMaskEdit
+    Left = 432
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 14
+    SpaceChar = '_'
+  end
+  object Button2: TButton
+    Left = 752
+    Height = 20
+    Top = 56
+    Width = 25
+    Caption = '...'
+    OnClick = Button2Click
+    TabOrder = 15
+  end
+  object Button5: TButton
+    Left = 752
+    Height = 20
+    Top = 80
+    Width = 25
+    Caption = '...'
+    OnClick = Button5Click
+    TabOrder = 16
+  end
+  object PgCrdSys: TPageControl
+    Left = 8
+    Height = 169
+    Top = 104
+    Width = 593
+    ActivePage = TabSheet1
+    TabIndex = 4
+    TabOrder = 17
+    object TabShBL: TTabSheet
+      Caption = 'Геодезические'
+      ClientHeight = 143
+      ClientWidth = 585
+      object Label2: TLabel
+        Left = 2
+        Height = 13
+        Top = 34
+        Width = 14
+        Caption = 'FN'
+      end
+      object Label9: TLabel
+        Left = 59
+        Height = 13
+        Top = 28
+        Width = 6
+        Caption = 'o'
+      end
+      object Label10: TLabel
+        Left = 101
+        Height = 13
+        Top = 32
+        Width = 2
+        Caption = ''''
+      end
+      object Label11: TLabel
+        Left = 147
+        Height = 13
+        Top = 32
+        Width = 4
+        Caption = ''''''
+      end
+      object Label3: TLabel
+        Left = 162
+        Height = 13
+        Top = 11
+        Width = 17
+        Caption = 'LW'
+      end
+      object Label17: TLabel
+        Left = 219
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label16: TLabel
+        Left = 261
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label15: TLabel
+        Left = 313
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label1: TLabel
+        Left = 2
+        Height = 13
+        Top = 10
+        Width = 13
+        Caption = 'FS'
+      end
+      object Label4: TLabel
+        Left = 59
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label5: TLabel
+        Left = 101
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label6: TLabel
+        Left = 147
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label7: TLabel
+        Left = 162
+        Height = 13
+        Top = 35
+        Width = 13
+        Caption = 'LE'
+      end
+      object Label8: TLabel
+        Left = 219
+        Height = 13
+        Top = 28
+        Width = 6
+        Caption = 'o'
+      end
+      object Label12: TLabel
+        Left = 261
+        Height = 13
+        Top = 32
+        Width = 2
+        Caption = ''''
+      end
+      object Label13: TLabel
+        Left = 313
+        Height = 13
+        Top = 32
+        Width = 4
+        Caption = ''''''
+      end
+      object Label14: TLabel
+        Left = 346
+        Height = 13
+        Top = 26
+        Width = 6
+        Caption = 'F'
+      end
+      object Label18: TLabel
+        Left = 453
+        Height = 13
+        Top = 32
+        Width = 2
+        Caption = ''''
+      end
+      object Label19: TLabel
+        Left = 493
+        Height = 13
+        Top = 32
+        Width = 4
+        Caption = ''''''
+      end
+      object Label20: TLabel
+        Left = 411
+        Height = 13
+        Top = 28
+        Width = 6
+        Caption = 'o'
+      end
+      object Label33: TLabel
+        Left = 328
+        Height = 13
+        Top = 40
+        Width = 42
+        Caption = 'Главная'
+      end
+      object Label85: TLabel
+        Left = 500
+        Height = 13
+        Top = 32
+        Width = 4
+        Caption = ''''''
+      end
+      object meBND: TMaskEdit
+        Left = 24
+        Height = 21
+        Top = 32
+        Width = 30
+        MaxLength = 3
+        TabOrder = 0
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBNM: TMaskEdit
+        Left = 72
+        Height = 21
+        Top = 32
+        Width = 25
+        MaxLength = 2
+        TabOrder = 1
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBNS: TMaskEdit
+        Left = 109
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meLWD: TMaskEdit
+        Left = 184
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 4
+        TabOrder = 3
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLWM: TMaskEdit
+        Left = 232
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 4
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLWS: TMaskEdit
+        Left = 269
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 5
+        SpaceChar = '_'
+      end
+      object meBSD: TMaskEdit
+        Left = 24
+        Height = 21
+        Top = 8
+        Width = 30
+        MaxLength = 3
+        TabOrder = 6
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBSM: TMaskEdit
+        Left = 72
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 7
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBSS: TMaskEdit
+        Left = 109
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 8
+        SpaceChar = '_'
+      end
+      object meLED: TMaskEdit
+        Left = 184
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 4
+        TabOrder = 9
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLEM: TMaskEdit
+        Left = 232
+        Height = 21
+        Top = 32
+        Width = 25
+        MaxLength = 2
+        TabOrder = 10
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLES: TMaskEdit
+        Left = 269
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 0
+        TabOrder = 11
+        SpaceChar = '_'
+      end
+      object meBMD: TMaskEdit
+        Left = 376
+        Height = 21
+        Top = 32
+        Width = 33
+        MaxLength = 3
+        TabOrder = 12
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBMM: TMaskEdit
+        Left = 424
+        Height = 21
+        Top = 32
+        Width = 25
+        MaxLength = 2
+        TabOrder = 13
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBMS: TMaskEdit
+        Left = 461
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 0
+        TabOrder = 14
+        SpaceChar = '_'
+      end
+      object Button4: TButton
+        Left = 368
+        Height = 25
+        Top = 0
+        Width = 121
+        Caption = 'Посчитать середину'
+        OnClick = Button4Click
+        TabOrder = 15
+      end
+    end
+    object TabShGauss: TTabSheet
+      Caption = 'Местные'
+      ClientHeight = 143
+      ClientWidth = 585
+      ImageIndex = 1
+      object Label36: TLabel
+        Left = 10
+        Height = 13
+        Top = 34
+        Width = 15
+        Caption = 'XN'
+      end
+      object Label40: TLabel
+        Left = 170
+        Height = 13
+        Top = 11
+        Width = 18
+        Caption = 'YW'
+      end
+      object Label44: TLabel
+        Left = 10
+        Height = 13
+        Top = 10
+        Width = 14
+        Caption = 'XS'
+      end
+      object Label48: TLabel
+        Left = 170
+        Height = 13
+        Top = 35
+        Width = 14
+        Caption = 'YE'
+      end
+      object Label52: TLabel
+        Left = 330
+        Height = 13
+        Top = 10
+        Width = 6
+        Caption = 'L'
+      end
+      object Label56: TLabel
+        Left = 312
+        Height = 13
+        Top = 24
+        Width = 42
+        Caption = 'Главная'
+      end
+      object Label54: TLabel
+        Left = 483
+        Height = 13
+        Top = 16
+        Width = 4
+        Caption = ''''''
+      end
+      object Label53: TLabel
+        Left = 437
+        Height = 13
+        Top = 16
+        Width = 2
+        Caption = ''''
+      end
+      object Label55: TLabel
+        Left = 395
+        Height = 13
+        Top = 12
+        Width = 6
+        Caption = 'o'
+      end
+      object meXN: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 32
+        Width = 105
+        MaxLength = 0
+        TabOrder = 0
+        SpaceChar = '_'
+      end
+      object meYW: TMaskEdit
+        Left = 192
+        Height = 21
+        Top = 8
+        Width = 97
+        MaxLength = 0
+        TabOrder = 1
+        SpaceChar = '_'
+      end
+      object meXS: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 8
+        Width = 105
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meYE: TMaskEdit
+        Left = 192
+        Height = 21
+        Top = 32
+        Width = 97
+        MaxLength = 0
+        TabOrder = 3
+        SpaceChar = '_'
+      end
+      object meLMD: TMaskEdit
+        Left = 360
+        Height = 21
+        Top = 16
+        Width = 36
+        MaxLength = 4
+        TabOrder = 4
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLMM: TMaskEdit
+        Left = 408
+        Height = 21
+        Top = 16
+        Width = 25
+        MaxLength = 2
+        TabOrder = 5
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLMS: TMaskEdit
+        Left = 445
+        Height = 21
+        Top = 16
+        Width = 36
+        MaxLength = 0
+        TabOrder = 6
+        SpaceChar = '_'
+      end
+    end
+    object TabShSlanting: TTabSheet
+      Caption = 'Для косых'
+      ClientHeight = 143
+      ClientWidth = 585
+      ImageIndex = 2
+      object Label66: TLabel
+        Left = 336
+        Height = 13
+        Top = 0
+        Width = 6
+        Caption = 'F'
+      end
+      object Label67: TLabel
+        Left = 395
+        Height = 13
+        Top = 12
+        Width = 6
+        Caption = 'o'
+      end
+      object Label68: TLabel
+        Left = 437
+        Height = 13
+        Top = 16
+        Width = 2
+        Caption = ''''
+      end
+      object Label69: TLabel
+        Left = 352
+        Height = 13
+        Top = 0
+        Width = 77
+        Caption = 'Геодезическая'
+      end
+      object Label70: TLabel
+        Left = 440
+        Height = 13
+        Top = 0
+        Width = 64
+        Caption = 'Нормальная'
+      end
+      object Label71: TLabel
+        Left = 2
+        Height = 13
+        Top = 10
+        Width = 12
+        Caption = 'F0'
+      end
+      object Label72: TLabel
+        Left = 59
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label73: TLabel
+        Left = 101
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label74: TLabel
+        Left = 147
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label75: TLabel
+        Left = 162
+        Height = 13
+        Top = 11
+        Width = 12
+        Caption = 'L0'
+      end
+      object Label76: TLabel
+        Left = 219
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label77: TLabel
+        Left = 261
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label78: TLabel
+        Left = 313
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label79: TLabel
+        Left = 72
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label80: TLabel
+        Left = 0
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'X0'
+      end
+      object Label81: TLabel
+        Left = 96
+        Height = 13
+        Top = 48
+        Width = 15
+        Caption = 'YO'
+      end
+      object Label82: TLabel
+        Left = 160
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label83: TLabel
+        Left = 481
+        Height = 13
+        Top = 16
+        Width = 4
+        Caption = ''''''
+      end
+      object Label86: TLabel
+        Left = 192
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dX'
+      end
+      object Label87: TLabel
+        Left = 256
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label88: TLabel
+        Left = 288
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dY'
+      end
+      object Label89: TLabel
+        Left = 352
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label129: TLabel
+        Left = 392
+        Height = 13
+        Top = 48
+        Width = 8
+        Caption = 'R'
+      end
+      object meBMND: TMaskEdit
+        Left = 360
+        Height = 21
+        Top = 16
+        Width = 33
+        MaxLength = 3
+        TabOrder = 0
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBMNM: TMaskEdit
+        Left = 408
+        Height = 21
+        Top = 16
+        Width = 25
+        MaxLength = 2
+        TabOrder = 1
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBMNS: TMaskEdit
+        Left = 445
+        Height = 21
+        Top = 16
+        Width = 36
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meB0D: TMaskEdit
+        Left = 24
+        Height = 21
+        Top = 8
+        Width = 30
+        MaxLength = 3
+        TabOrder = 3
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meB0M: TMaskEdit
+        Left = 72
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 4
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meB0S: TMaskEdit
+        Left = 109
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 5
+        SpaceChar = '_'
+      end
+      object meL0D: TMaskEdit
+        Left = 184
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 4
+        TabOrder = 6
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meL0M: TMaskEdit
+        Left = 232
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 7
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meL0S: TMaskEdit
+        Left = 269
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 8
+        SpaceChar = '_'
+      end
+      object EdX0: TEdit
+        Left = 24
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 9
+      end
+      object EdY0: TEdit
+        Left = 112
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 10
+      end
+      object edDX: TEdit
+        Left = 208
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 11
+      end
+      object edDY: TEdit
+        Left = 304
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 12
+      end
+      object EdRSlant: TEdit
+        Left = 408
+        Height = 21
+        Top = 40
+        Width = 97
+        TabOrder = 13
+      end
+      object Button8: TButton
+        Left = 512
+        Height = 25
+        Top = 40
+        Width = 65
+        Caption = 'Рассчитать'
+        OnClick = Button8Click
+        TabOrder = 14
+      end
+    end
+    object TabShKvasi: TTabSheet
+      Caption = 'Квазикоординаты'
+      ClientHeight = 143
+      ClientWidth = 585
+      ImageIndex = 3
+      object Label37: TLabel
+        Left = 2
+        Height = 13
+        Top = 10
+        Width = 13
+        Caption = 'FS'
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        ParentFont = False
+      end
+      object Label38: TLabel
+        Left = 59
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label39: TLabel
+        Left = 101
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label41: TLabel
+        Left = 147
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label42: TLabel
+        Left = 162
+        Height = 13
+        Top = 11
+        Width = 17
+        Caption = 'LW'
+      end
+      object Label43: TLabel
+        Left = 219
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label45: TLabel
+        Left = 261
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label46: TLabel
+        Left = 313
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label47: TLabel
+        Left = 2
+        Height = 13
+        Top = 34
+        Width = 14
+        Caption = 'FN'
+      end
+      object Label49: TLabel
+        Left = 59
+        Height = 13
+        Top = 28
+        Width = 6
+        Caption = 'o'
+      end
+      object Label50: TLabel
+        Left = 101
+        Height = 13
+        Top = 32
+        Width = 2
+        Caption = ''''
+      end
+      object Label51: TLabel
+        Left = 147
+        Height = 13
+        Top = 32
+        Width = 4
+        Caption = ''''''
+      end
+      object Label57: TLabel
+        Left = 162
+        Height = 13
+        Top = 35
+        Width = 13
+        Caption = 'LE'
+      end
+      object Label58: TLabel
+        Left = 219
+        Height = 13
+        Top = 28
+        Width = 6
+        Caption = 'o'
+      end
+      object Label59: TLabel
+        Left = 261
+        Height = 13
+        Top = 32
+        Width = 2
+        Caption = ''''
+      end
+      object Label60: TLabel
+        Left = 313
+        Height = 13
+        Top = 32
+        Width = 4
+        Caption = ''''''
+      end
+      object Label61: TLabel
+        Left = 352
+        Height = 13
+        Top = 0
+        Width = 6
+        Caption = 'F'
+      end
+      object Label62: TLabel
+        Left = 456
+        Height = 13
+        Top = 0
+        Width = 64
+        Caption = 'Нормальная'
+      end
+      object Label63: TLabel
+        Left = 403
+        Height = 13
+        Top = 12
+        Width = 6
+        Caption = 'o'
+      end
+      object Label64: TLabel
+        Left = 445
+        Height = 13
+        Top = 16
+        Width = 2
+        Caption = ''''
+      end
+      object Label65: TLabel
+        Left = 368
+        Height = 13
+        Top = 0
+        Width = 77
+        Caption = 'Геодезическая'
+      end
+      object Label84: TLabel
+        Left = 497
+        Height = 13
+        Top = 16
+        Width = 4
+        Caption = ''''''
+      end
+      object Label128: TLabel
+        Left = 352
+        Height = 13
+        Top = 48
+        Width = 8
+        Caption = 'R'
+      end
+      object meBSDKV: TMaskEdit
+        Left = 24
+        Height = 21
+        Top = 8
+        Width = 30
+        MaxLength = 3
+        TabOrder = 0
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBSMKV: TMaskEdit
+        Left = 72
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 1
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBSSKV: TMaskEdit
+        Left = 109
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meLWDKV: TMaskEdit
+        Left = 184
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 4
+        TabOrder = 3
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLWMKV: TMaskEdit
+        Left = 232
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 4
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLWSKV: TMaskEdit
+        Left = 269
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 5
+        SpaceChar = '_'
+      end
+      object meBNDKV: TMaskEdit
+        Left = 24
+        Height = 21
+        Top = 32
+        Width = 30
+        MaxLength = 3
+        TabOrder = 6
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBNMKV: TMaskEdit
+        Left = 72
+        Height = 21
+        Top = 32
+        Width = 25
+        MaxLength = 2
+        TabOrder = 7
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBNSKV: TMaskEdit
+        Left = 109
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 0
+        TabOrder = 8
+        SpaceChar = '_'
+      end
+      object meLEDKV: TMaskEdit
+        Left = 184
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 4
+        TabOrder = 9
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLEMKV: TMaskEdit
+        Left = 232
+        Height = 21
+        Top = 32
+        Width = 25
+        MaxLength = 2
+        TabOrder = 10
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLESKV: TMaskEdit
+        Left = 269
+        Height = 21
+        Top = 32
+        Width = 36
+        MaxLength = 0
+        TabOrder = 11
+        SpaceChar = '_'
+      end
+      object meBmdkv: TMaskEdit
+        Left = 368
+        Height = 21
+        Top = 16
+        Width = 33
+        MaxLength = 3
+        TabOrder = 12
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBmMkv: TMaskEdit
+        Left = 416
+        Height = 21
+        Top = 16
+        Width = 25
+        MaxLength = 2
+        TabOrder = 13
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBmSkv: TMaskEdit
+        Left = 453
+        Height = 21
+        Top = 16
+        Width = 36
+        MaxLength = 0
+        TabOrder = 14
+        SpaceChar = '_'
+      end
+      object EdRCrossMerc: TEdit
+        Left = 368
+        Height = 21
+        Top = 40
+        Width = 121
+        TabOrder = 15
+      end
+      object Button6: TButton
+        Left = 496
+        Height = 25
+        Top = 40
+        Width = 65
+        Caption = 'Рассчитать'
+        OnClick = Button6Click
+        TabOrder = 16
+      end
+    end
+    object TabSheet1: TTabSheet
+      Caption = 'Нормальные'
+      ClientHeight = 143
+      ClientWidth = 585
+      ImageIndex = 4
+      object Label90: TLabel
+        Left = 18
+        Height = 13
+        Top = 66
+        Width = 147
+        Caption = 'Широта левого нижнего угла'
+      end
+      object Label91: TLabel
+        Left = 211
+        Height = 13
+        Top = 60
+        Width = 6
+        Caption = 'o'
+      end
+      object Label92: TLabel
+        Left = 253
+        Height = 13
+        Top = 64
+        Width = 2
+        Caption = ''''
+      end
+      object Label93: TLabel
+        Left = 299
+        Height = 13
+        Top = 64
+        Width = 4
+        Caption = ''''''
+      end
+      object Label94: TLabel
+        Left = 242
+        Height = 13
+        Top = 11
+        Width = 12
+        Caption = 'L0'
+      end
+      object Label95: TLabel
+        Left = 299
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label96: TLabel
+        Left = 341
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label97: TLabel
+        Left = 389
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label98: TLabel
+        Left = 400
+        Height = 13
+        Top = 0
+        Width = 6
+        Caption = 'F'
+      end
+      object Label99: TLabel
+        Left = 416
+        Height = 13
+        Top = 0
+        Width = 77
+        Caption = 'Геодезическая'
+      end
+      object Label100: TLabel
+        Left = 504
+        Height = 13
+        Top = 0
+        Width = 64
+        Caption = 'Нормальная'
+      end
+      object Label101: TLabel
+        Left = 459
+        Height = 13
+        Top = 12
+        Width = 6
+        Caption = 'o'
+      end
+      object Label102: TLabel
+        Left = 501
+        Height = 13
+        Top = 16
+        Width = 2
+        Caption = ''''
+      end
+      object Label103: TLabel
+        Left = 545
+        Height = 13
+        Top = 16
+        Width = 4
+        Caption = ''''''
+      end
+      object Label108: TLabel
+        Left = 8
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dX'
+      end
+      object Label109: TLabel
+        Left = 80
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label110: TLabel
+        Left = 104
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dY'
+      end
+      object Label111: TLabel
+        Left = 176
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label104: TLabel
+        Left = 146
+        Height = 13
+        Top = 90
+        Width = 24
+        Caption = 'LSW'
+      end
+      object Label105: TLabel
+        Left = 211
+        Height = 13
+        Top = 84
+        Width = 6
+        Caption = 'o'
+      end
+      object Label106: TLabel
+        Left = 253
+        Height = 13
+        Top = 88
+        Width = 2
+        Caption = ''''
+      end
+      object Label107: TLabel
+        Left = 299
+        Height = 13
+        Top = 88
+        Width = 4
+        Caption = ''''''
+      end
+      object Label130: TLabel
+        Left = 344
+        Height = 13
+        Top = 48
+        Width = 8
+        Caption = 'R'
+      end
+      object Label158: TLabel
+        Left = 0
+        Height = 13
+        Top = 16
+        Width = 13
+        Caption = 'X0'
+      end
+      object Label159: TLabel
+        Left = 104
+        Height = 13
+        Top = 16
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label160: TLabel
+        Left = 136
+        Height = 13
+        Top = 16
+        Width = 15
+        Caption = 'YO'
+      end
+      object Label161: TLabel
+        Left = 216
+        Height = 13
+        Top = 16
+        Width = 16
+        Caption = 'мм'
+      end
+      object meBNormSWD: TMaskEdit
+        Left = 176
+        Height = 21
+        Top = 64
+        Width = 30
+        MaxLength = 3
+        TabOrder = 0
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBNormSWM: TMaskEdit
+        Left = 224
+        Height = 21
+        Top = 64
+        Width = 25
+        MaxLength = 2
+        TabOrder = 1
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBNormSWS: TMaskEdit
+        Left = 261
+        Height = 21
+        Top = 64
+        Width = 36
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meLNorm0D: TMaskEdit
+        Left = 264
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 4
+        TabOrder = 3
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLNorm0M: TMaskEdit
+        Left = 312
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 4
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLNorm0S: TMaskEdit
+        Left = 349
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 5
+        SpaceChar = '_'
+      end
+      object meBNNormD: TMaskEdit
+        Left = 424
+        Height = 21
+        Top = 16
+        Width = 33
+        MaxLength = 3
+        TabOrder = 6
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBNNormM: TMaskEdit
+        Left = 472
+        Height = 21
+        Top = 16
+        Width = 25
+        MaxLength = 2
+        TabOrder = 7
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBNNormS: TMaskEdit
+        Left = 509
+        Height = 21
+        Top = 16
+        Width = 36
+        MaxLength = 0
+        TabOrder = 8
+        SpaceChar = '_'
+      end
+      object eddxNorm: TEdit
+        Left = 24
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 9
+      end
+      object edDYNorm: TEdit
+        Left = 120
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 10
+      end
+      object meLNormSWD: TMaskEdit
+        Left = 176
+        Height = 21
+        Top = 88
+        Width = 30
+        MaxLength = 4
+        TabOrder = 11
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLNormSWM: TMaskEdit
+        Left = 224
+        Height = 21
+        Top = 88
+        Width = 25
+        MaxLength = 2
+        TabOrder = 12
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLNormSWS: TMaskEdit
+        Left = 261
+        Height = 21
+        Top = 88
+        Width = 36
+        MaxLength = 0
+        TabOrder = 13
+        SpaceChar = '_'
+      end
+      object EdRNorm: TEdit
+        Left = 360
+        Height = 21
+        Top = 40
+        Width = 113
+        TabOrder = 14
+      end
+      object Button9: TButton
+        Left = 480
+        Height = 25
+        Top = 40
+        Width = 65
+        Caption = 'Рассчитать'
+        OnClick = Button9Click
+        TabOrder = 15
+      end
+      object edX0Norm: TEdit
+        Left = 16
+        Height = 21
+        Top = 8
+        Width = 81
+        TabOrder = 16
+      end
+      object edY0Norm: TEdit
+        Left = 152
+        Height = 21
+        Top = 8
+        Width = 65
+        TabOrder = 17
+      end
+      object ChBxMirr: TCheckBox
+        Left = 320
+        Height = 19
+        Top = 72
+        Width = 243
+        Caption = 'Зеркальное отражение системы координат'
+        TabOrder = 18
+      end
+      object ChBXleftbott: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 112
+        Width = 244
+        Caption = 'Использовать  широту левого нижнего угла'
+        TabOrder = 19
+      end
+      object Button10: TButton
+        Left = 8
+        Height = 25
+        Top = 80
+        Width = 129
+        Caption = 'Рассчитать координаты'
+        OnClick = Button10Click
+        TabOrder = 20
+      end
+      object ChBxCircle: TCheckBox
+        Left = 320
+        Height = 19
+        Top = 96
+        Width = 120
+        Caption = 'Покрытие круговое'
+        TabOrder = 21
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Поперечные'
+      ClientHeight = 143
+      ClientWidth = 585
+      ImageIndex = 5
+      object Label112: TLabel
+        Left = 2
+        Height = 13
+        Top = 10
+        Width = 24
+        Caption = 'FSW'
+      end
+      object Label113: TLabel
+        Left = 67
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label114: TLabel
+        Left = 109
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label115: TLabel
+        Left = 155
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label116: TLabel
+        Left = 178
+        Height = 13
+        Top = 11
+        Width = 12
+        Caption = 'L0'
+      end
+      object Label117: TLabel
+        Left = 235
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label118: TLabel
+        Left = 277
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label119: TLabel
+        Left = 325
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label120: TLabel
+        Left = 2
+        Height = 13
+        Top = 42
+        Width = 24
+        Caption = 'LSW'
+      end
+      object Label121: TLabel
+        Left = 67
+        Height = 13
+        Top = 36
+        Width = 6
+        Caption = 'o'
+      end
+      object Label122: TLabel
+        Left = 109
+        Height = 13
+        Top = 40
+        Width = 2
+        Caption = ''''
+      end
+      object Label123: TLabel
+        Left = 155
+        Height = 13
+        Top = 40
+        Width = 4
+        Caption = ''''''
+      end
+      object Label124: TLabel
+        Left = 184
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dX'
+      end
+      object Label125: TLabel
+        Left = 248
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label126: TLabel
+        Left = 288
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dY'
+      end
+      object Label127: TLabel
+        Left = 352
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object meBCrossSWD: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 8
+        Width = 30
+        MaxLength = 3
+        TabOrder = 0
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBCrossSWM: TMaskEdit
+        Left = 80
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 1
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBCrossSWS: TMaskEdit
+        Left = 117
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meL0CrossD: TMaskEdit
+        Left = 200
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 4
+        TabOrder = 3
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meL0CrossM: TMaskEdit
+        Left = 248
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 4
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meL0CrossS: TMaskEdit
+        Left = 285
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 5
+        SpaceChar = '_'
+      end
+      object meLCrossSWD: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 40
+        Width = 30
+        MaxLength = 4
+        TabOrder = 6
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLCrossSWM: TMaskEdit
+        Left = 80
+        Height = 21
+        Top = 40
+        Width = 25
+        MaxLength = 2
+        TabOrder = 7
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLCrossSWS: TMaskEdit
+        Left = 117
+        Height = 21
+        Top = 40
+        Width = 36
+        MaxLength = 0
+        TabOrder = 8
+        SpaceChar = '_'
+      end
+      object EdDXCross: TEdit
+        Left = 200
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 9
+      end
+      object edDYCross: TEdit
+        Left = 304
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 10
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Коническая'
+      ClientHeight = 143
+      ClientWidth = 585
+      ImageIndex = 6
+      object Label131: TLabel
+        Left = 2
+        Height = 13
+        Top = 10
+        Width = 24
+        Caption = 'FSW'
+      end
+      object Label132: TLabel
+        Left = 67
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label133: TLabel
+        Left = 109
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label134: TLabel
+        Left = 155
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label135: TLabel
+        Left = 178
+        Height = 13
+        Top = 11
+        Width = 12
+        Caption = 'L0'
+      end
+      object Label136: TLabel
+        Left = 235
+        Height = 13
+        Top = 4
+        Width = 6
+        Caption = 'o'
+      end
+      object Label137: TLabel
+        Left = 277
+        Height = 13
+        Top = 8
+        Width = 2
+        Caption = ''''
+      end
+      object Label138: TLabel
+        Left = 325
+        Height = 13
+        Top = 8
+        Width = 4
+        Caption = ''''''
+      end
+      object Label139: TLabel
+        Left = 368
+        Height = 13
+        Top = 20
+        Width = 12
+        Caption = 'F1'
+      end
+      object Label140: TLabel
+        Left = 384
+        Height = 13
+        Top = 0
+        Width = 124
+        Caption = 'Геодезические опорные'
+      end
+      object Label142: TLabel
+        Left = 419
+        Height = 13
+        Top = 12
+        Width = 6
+        Caption = 'o'
+      end
+      object Label143: TLabel
+        Left = 461
+        Height = 13
+        Top = 16
+        Width = 2
+        Caption = ''''
+      end
+      object Label144: TLabel
+        Left = 505
+        Height = 13
+        Top = 16
+        Width = 4
+        Caption = ''''''
+      end
+      object Label145: TLabel
+        Left = 2
+        Height = 13
+        Top = 42
+        Width = 24
+        Caption = 'LSW'
+      end
+      object Label146: TLabel
+        Left = 67
+        Height = 13
+        Top = 36
+        Width = 6
+        Caption = 'o'
+      end
+      object Label147: TLabel
+        Left = 109
+        Height = 13
+        Top = 40
+        Width = 2
+        Caption = ''''
+      end
+      object Label148: TLabel
+        Left = 155
+        Height = 13
+        Top = 40
+        Width = 4
+        Caption = ''''''
+      end
+      object Label149: TLabel
+        Left = 176
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dX'
+      end
+      object Label150: TLabel
+        Left = 240
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label151: TLabel
+        Left = 272
+        Height = 13
+        Top = 48
+        Width = 13
+        Caption = 'dY'
+      end
+      object Label152: TLabel
+        Left = 336
+        Height = 13
+        Top = 48
+        Width = 16
+        Caption = 'мм'
+      end
+      object Label141: TLabel
+        Left = 368
+        Height = 13
+        Top = 45
+        Width = 12
+        Caption = 'F2'
+      end
+      object Label154: TLabel
+        Left = 419
+        Height = 13
+        Top = 36
+        Width = 6
+        Caption = 'o'
+      end
+      object Label155: TLabel
+        Left = 461
+        Height = 13
+        Top = 40
+        Width = 2
+        Caption = ''''
+      end
+      object Label156: TLabel
+        Left = 505
+        Height = 13
+        Top = 40
+        Width = 4
+        Caption = ''''''
+      end
+      object Label153: TLabel
+        Left = 10
+        Height = 13
+        Top = 74
+        Width = 14
+        Caption = 'XS'
+      end
+      object Label157: TLabel
+        Left = 10
+        Height = 13
+        Top = 99
+        Width = 18
+        Caption = 'YW'
+      end
+      object meBConSWD: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 8
+        Width = 30
+        MaxLength = 3
+        TabOrder = 0
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meBConSWM: TMaskEdit
+        Left = 80
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 1
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meBConSWS: TMaskEdit
+        Left = 117
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 2
+        SpaceChar = '_'
+      end
+      object meLCon0D: TMaskEdit
+        Left = 200
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 4
+        TabOrder = 3
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLCon0M: TMaskEdit
+        Left = 248
+        Height = 21
+        Top = 8
+        Width = 25
+        MaxLength = 2
+        TabOrder = 4
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLCon0S: TMaskEdit
+        Left = 285
+        Height = 21
+        Top = 8
+        Width = 36
+        MaxLength = 0
+        TabOrder = 5
+        SpaceChar = '_'
+      end
+      object meB1ConD: TMaskEdit
+        Left = 384
+        Height = 21
+        Top = 16
+        Width = 33
+        MaxLength = 3
+        TabOrder = 6
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meB1ConM: TMaskEdit
+        Left = 432
+        Height = 21
+        Top = 16
+        Width = 25
+        MaxLength = 2
+        TabOrder = 7
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meB1ConS: TMaskEdit
+        Left = 469
+        Height = 21
+        Top = 16
+        Width = 36
+        MaxLength = 0
+        TabOrder = 8
+        SpaceChar = '_'
+      end
+      object meLConSWD: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 40
+        Width = 30
+        MaxLength = 4
+        TabOrder = 9
+        EditMask = '#999;1;0'
+        Text = '    '
+        SpaceChar = '0'
+      end
+      object meLConSWM: TMaskEdit
+        Left = 80
+        Height = 21
+        Top = 40
+        Width = 25
+        MaxLength = 2
+        TabOrder = 10
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meLConSWS: TMaskEdit
+        Left = 117
+        Height = 21
+        Top = 40
+        Width = 36
+        MaxLength = 0
+        TabOrder = 11
+        SpaceChar = '_'
+      end
+      object edConDX: TEdit
+        Left = 192
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 12
+      end
+      object EdConDY: TEdit
+        Left = 288
+        Height = 21
+        Top = 40
+        Width = 49
+        TabOrder = 13
+      end
+      object meB2ConD: TMaskEdit
+        Left = 384
+        Height = 21
+        Top = 40
+        Width = 33
+        MaxLength = 3
+        TabOrder = 14
+        EditMask = '#99;1;0'
+        Text = '   '
+        SpaceChar = '0'
+      end
+      object meB2ConM: TMaskEdit
+        Left = 432
+        Height = 21
+        Top = 40
+        Width = 25
+        MaxLength = 2
+        TabOrder = 15
+        EditMask = '99;1;0'
+        Text = '  '
+        SpaceChar = '0'
+      end
+      object meB2ConS: TMaskEdit
+        Left = 469
+        Height = 21
+        Top = 40
+        Width = 36
+        MaxLength = 0
+        TabOrder = 16
+        SpaceChar = '_'
+      end
+      object meXSConus: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 72
+        Width = 105
+        MaxLength = 0
+        TabOrder = 17
+        SpaceChar = '_'
+      end
+      object meYWConus: TMaskEdit
+        Left = 32
+        Height = 21
+        Top = 96
+        Width = 105
+        MaxLength = 0
+        TabOrder = 18
+        SpaceChar = '_'
+      end
+      object RGConus: TRadioGroup
+        Left = 168
+        Height = 45
+        Top = 70
+        Width = 169
+        AutoFill = True
+        Caption = 'Способ задания'
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ClientHeight = 27
+        ClientWidth = 165
+        Items.Strings = (
+          'Координаты проекции'
+          'Геодезические координаты'
+        )
+        TabOrder = 19
+      end
+    end
+  end
+  object EdScale: TEdit
+    Left = 120
+    Height = 21
+    Top = 320
+    Width = 121
+    TabOrder = 19
+  end
+  object EdListWidth: TEdit
+    Left = 120
+    Height = 21
+    Top = 344
+    Width = 73
+    TabOrder = 20
+  end
+  object MeSrcWX: TMaskEdit
+    Left = 504
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 21
+    SpaceChar = '_'
+  end
+  object MeSrcWY: TMaskEdit
+    Left = 568
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 22
+    SpaceChar = '_'
+  end
+  object MeSrcWZ: TMaskEdit
+    Left = 640
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 23
+    SpaceChar = '_'
+  end
+  object MeTagWX: TMaskEdit
+    Left = 504
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 24
+    SpaceChar = '_'
+  end
+  object MeTagWY: TMaskEdit
+    Left = 568
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 25
+    SpaceChar = '_'
+  end
+  object MeTagWZ: TMaskEdit
+    Left = 640
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 26
+    SpaceChar = '_'
+  end
+  object MeSrcM: TMaskEdit
+    Left = 704
+    Height = 21
+    Top = 56
+    Width = 33
+    MaxLength = 0
+    TabOrder = 27
+    SpaceChar = '_'
+  end
+  object MeTagm: TMaskEdit
+    Left = 704
+    Height = 21
+    Top = 80
+    Width = 33
+    MaxLength = 0
+    TabOrder = 28
+    SpaceChar = '_'
+  end
+end

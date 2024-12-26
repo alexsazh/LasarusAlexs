@@ -1,0 +1,120 @@
+object GsOptDlg: TGsOptDlg
+  Left = 337
+  Height = 185
+  Top = 284
+  Width = 341
+  BorderStyle = bsDialog
+  Caption = 'Параметры'
+  ClientHeight = 185
+  ClientWidth = 341
+  Color = clBtnFace
+  OnHide = FormHide
+  ParentFont = True
+  LCLVersion = '2.2.0.4'
+  object GsBox: TGroupBox
+    Left = 7
+    Height = 46
+    Top = 7
+    Width = 321
+    Caption = 'Путь к GhostScript:'
+    ClientHeight = 26
+    ClientWidth = 317
+    TabOrder = 0
+    object GsLabel: TLabel
+      Left = 5
+      Height = 13
+      Top = 1
+      Width = 143
+      Caption = 'C:\MS\BINW\GSWIN32.EXE'
+      Font.Color = clPurple
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      ParentFont = False
+    end
+    object GsPathBtn: TButton
+      Left = 232
+      Height = 23
+      Top = 0
+      Width = 67
+      Caption = 'Изменить'
+      OnClick = GsPathBtnClick
+      TabOrder = 0
+    end
+  end
+  object LibBox: TGroupBox
+    Left = 7
+    Height = 72
+    Top = 59
+    Width = 321
+    Caption = 'Путь к PSL.INI (MS\LIB):'
+    ClientHeight = 52
+    ClientWidth = 317
+    TabOrder = 1
+    object LibLabel: TLabel
+      Left = 5
+      Height = 13
+      Top = 0
+      Width = 94
+      Caption = 'C:\MS\LIB\PSL.INI'
+      Font.Color = clPurple
+      Font.Height = -12
+      Font.Name = 'MS Sans Serif'
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 5
+      Height = 15
+      Top = 32
+      Width = 306
+      Caption = 'Добавляет параллельные директории FONTS, INCLUDE,'
+      WordWrap = True
+    end
+    object LibPathBtn: TButton
+      Left = 232
+      Height = 23
+      Top = 0
+      Width = 67
+      Caption = 'Изменить'
+      OnClick = LibPathBtnClick
+      TabOrder = 0
+    end
+  end
+  object OkBtn: TBitBtn
+    Left = 48
+    Height = 25
+    Top = 152
+    Width = 75
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = OkBtnClick
+    TabOrder = 2
+  end
+  object CancelBtn: TBitBtn
+    Left = 216
+    Height = 25
+    Top = 152
+    Width = 75
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 15
+    Height = 15
+    Top = 128
+    Width = 88
+    Caption = 'если такие есть.'
+  end
+  object GsOpen: TOpenDialog
+    Filter = '*.exe|*.exe'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist]
+    Left = 248
+    Top = 24
+  end
+  object LibOpen: TOpenDialog
+    Filter = 'PS Library (PSL.INI)|*.ini'
+    Options = [ofHideReadOnly, ofNoChangeDir, ofPathMustExist, ofFileMustExist]
+    Left = 248
+    Top = 72
+  end
+end

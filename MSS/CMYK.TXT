@@ -1,0 +1,4 @@
+Cyan    -c
+Magenta -m
+Yellow  -y
+Black   -k

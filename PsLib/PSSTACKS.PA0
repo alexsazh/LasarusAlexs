@@ -1,0 +1,197 @@
+unit psstacks; interface
+(*
+{$DEFINE STACK_AS_ARRAY}
+*)
+uses psarrays, psobj, psdicts;
+
+type
+  TPsStack = class(TPsArray)
+    CallCount: array[0..1]of integer; {Push, PopN}
+
+    function Push(o: TPsObj): boolean; virtual;
+    function Pop: boolean; virtual;
+    function PopN(n: Integer): boolean; virtual;
+    function Index(Ind: Integer; var o: TPsObj): boolean;
+    function IndexP(Ind: Integer): PPsObj;
+
+    function Print: string; override;
+    function CountToType(typ: TPsType; xcheck: boolean): Integer; {>=0; не включая искомый}
+    function CountToMark(xcheck: boolean): Integer; {>=0; не включая искомый}
+  end;
+
+  TOperandStack = class(TPsStack)
+    function Push(o: TPsObj): boolean; override; {overflow}
+    function PopN(n: Integer): boolean; override; {underflow}
+  end;
+
+  TExecStack = class(TPsStack)
+    function Push(o: TPsObj): boolean; override; {overflow}
+    function PopN(n: Integer): boolean; override; {underflow}
+  end;
+
+  TNameStack = class(TPsStack)
+    function Push(o: TPsObj): boolean; override; {overflow}
+    function PopN(n: Integer): boolean; override; {underflow}
+    function CurrentName: string;
+  end;
+
+  TDictStack = class(TPsStack)
+    function Push(o: TPsObj): boolean; override;
+    function PopN(n: Integer): boolean; override; {Count>=3}
+    function Find(Key: Integer; var d, o: TPsObj): boolean;
+  end;
+
+
+var
+  operandstack: TOperandStack;
+  dictstack: TDictStack;
+  execstack: TExecStack;
+  namestack: TPsStack;
+
+implementation
+
+uses wcmn, psobjx, pso, psx;
+
+{TPsStack:}
+
+function TPsStack.Push(o: TPsObj): boolean;
+begin
+  inc( CallCount[0] );
+
+  if _.Add(o)>=0 then Result:=true else Result:=false;
+end;
+
+function TPsStack.Pop: boolean;
+begin
+  Result:=PopN(1);
+end;
+
+function TPsStack.PopN(n: Integer): boolean;
+begin
+  inc( CallCount[1] );
+
+  if {(PS.Status=0) and} (_.Count>=n) then begin _.Count:=_.Count-n; Result:=true; end
+  else Result:=false;
+end;
+
+function TPsStack.Index(Ind: Integer; var o: TPsObj): boolean;
+begin
+  Result:=_.Get(Count-1-Ind,o);
+end;
+
+function TPsStack.IndexP(Ind: Integer): PPsObj;
+begin
+  Result:=GetP(Count-1-Ind);
+end;
+
+function TPsStack.Print: string;
+var o: TPsObj; i: Integer;
+begin
+  Result:='';
+  for i:=_.count-1 downto 0 do begin
+    _.Get(i,o);
+    if i<_.count-1 then Result:=Result+_EOL_;
+    Result:=Result+psobj_print(o);
+  end;
+end;
+
+function TPsStack.CountToType(typ: TPsType; xcheck: boolean): Integer;
+var i,n: integer; o: TPsObj;
+begin
+  Result:=-1;
+  n:=0;
+  if _.Count>0 then for i:=_.Count-1 downto 0 do begin
+    _.Get(i,o);
+    if (o.pstype=typ) and (o.xcheck=xcheck) then begin Result:=n; exit; end;
+    inc(n);
+  end;
+end;
+
+function TPsStack.CountToMark(xcheck: boolean): Integer;
+begin
+  Result:=CountToType(marktype,xcheck);
+end;
+
+{TOperandStack:}
+
+function TOperandStack.PopN(n: Integer): boolean;
+begin
+  Result := inherited PopN(n);
+  if not Result then Ps.Error0('OperandStackUnderflow');
+end;
+
+function TOperandStack.Push(o: TPsObj): boolean;
+begin
+  Result := inherited Push(o);
+  if not Result then Ps.Error0('OperandStackOverflow');
+end;
+
+{TExecStack:}
+
+function TExecStack.PopN(n: Integer): boolean;
+begin
+  Result := inherited PopN(n);
+  if not Result then Ps.Error0('ExecStackUnderflow');
+end;
+
+function TExecStack.Push(o: TPsObj): boolean;
+begin
+  Result := inherited Push(o);
+  if not Result then Ps.Error0('ExecStackOverflow');
+end;
+
+{TNameStack:}
+
+function TNameStack.PopN(n: Integer): boolean;
+begin
+  Result := inherited PopN(n);
+  if not Result then Ps.Error0('NameStackUnderflow');
+end;
+
+function TNameStack.Push(o: TPsObj): boolean;
+begin
+  Result := inherited Push(o);
+  if not Result then Ps.Error0('NameStackOverflow');
+end;
+
+function TNameStack.CurrentName: string;
+var po: PPsObj;
+begin
+  po:=IndexP(0);
+  if (po<>nil) and (po^.pstype=nametype) then Result:=Ps.Names.Name(po^.key)
+  else Result:='';
+end;
+
+
+{TDictStack:}
+
+function TDictStack.PopN(n: Integer): boolean; {Count>=3}
+begin
+  if _.Count>=n+3 then begin _.Count:=_.Count-n; Result:=true; end
+  else begin Result:=false; Ps.Error0('DictStackUnderflow'); end;
+end;
+
+function TDictStack.Push(o: TPsObj): boolean;
+begin
+  Result := inherited Push(o);
+  if not Result then begin Ps.Error0('DictStackOverflow'); exit; end;
+{$IFDEF KEY_INDEX}
+  TPsDict(psobj_psobjx(o)).KeyIndexCreate;
+{$ENDIF}
+end;
+
+function TDictStack.Find(Key: Integer; var d, o: TPsObj): boolean;
+var i,j: Integer; dx: TPsDict;
+begin
+  Result:=false;
+  if _.Count>0 then for i:=_.Count-1 downto 0 do begin
+    _.Get(i,d);
+    TPsObjX(dx):=psobj_psobjx(d);
+    if not dx.Value(Key,o,j) then continue;
+    Result:=true;
+    break;
+  end;
+end;
+
+
+end.{of unit}

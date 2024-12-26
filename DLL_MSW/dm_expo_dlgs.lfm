@@ -1,0 +1,21 @@
+object dm_expo_dlgs1: Tdm_expo_dlgs1
+  Left = 0
+  Top = 0
+  Caption = 'dm_expo_dlgs1'
+  ClientHeight = 283
+  ClientWidth = 306
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  PixelsPerInch = 96
+  object Open_GCX: TOpenDialog
+    Filter = '*.gcx|*.gcx'
+    Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofEnableSizing]
+    Title = 'GCX-предобработчик'
+    Left = 32
+    Top = 24
+  end
+end

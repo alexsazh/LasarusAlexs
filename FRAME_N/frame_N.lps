@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="frame_N.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="42" Y="16"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fr_sea.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FSeaFrm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="22"/>
+        <TopLine Value="501"/>
+        <CursorPos Y="517"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="UFrmnavy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="127"/>
+        <CursorPos X="7" Y="996"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="NavyHead.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FNavyHead"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="23"/>
+        <TopLine Value="183"/>
+        <CursorPos X="3" Y="200"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="NavScale.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FnavScale"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="63"/>
+        <CursorPos X="17" Y="85"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="FR_Nmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FfrmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="5" Y="38"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="wmPick.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="13"/>
+        <CursorPos X="21" Y="8"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="UconFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FConus"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="2459"/>
+        <CursorPos X="54" Y="2476"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uNormstr.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FNormSt"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="140"/>
+        <CursorPos X="17" Y="157"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="UArt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="2102"/>
+        <CursorPos X="12" Y="2119"/>
+        <UsageCount Value="220"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\Convert.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="19"/>
+        <CursorPos X="33" Y="7"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus\components\lazutils\lazutf8.pas"/>
+        <UnitName Value="LazUTF8"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="21"/>
+        <TopLine Value="31"/>
+        <CursorPos X="21" Y="61"/>
+        <UsageCount Value="107"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="1572"/>
+        <CursorPos X="21" Y="1600"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\OTypes.pas"/>
+        <EditorIndex Value="19"/>
+        <TopLine Value="1214"/>
+        <CursorPos X="44" Y="1225"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus\fpc\3.2.2\source\rtl\objpas\math.pp"/>
+        <UnitName Value="Math"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="119"/>
+        <CursorPos X="30" Y="134"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus\fpc\3.2.2\source\rtl\objpas\objpas.pp"/>
+        <EditorIndex Value="18"/>
+        <TopLine Value="21"/>
+        <CursorPos X="8" Y="36"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus\fpc\3.2.2\source\rtl\win\wininc\ascdef.inc"/>
+        <EditorIndex Value="20"/>
+        <TopLine Value="194"/>
+        <CursorPos X="19" Y="209"/>
+        <UsageCount Value="102"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="nvunzarm.pas"/>
+        <ComponentName Value="FtuneZaram"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="51" Y="7"/>
+        <UsageCount Value="102"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\packages\fcl-db\src\base\db.pas"/>
+        <UnitName Value="DB"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="580"/>
+        <CursorPos X="3" Y="597"/>
+        <UsageCount Value="101"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frnavyfun.pas"/>
+        <UnitName Value="frNavyfun"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="449"/>
+        <CursorPos X="13" Y="454"/>
+        <UsageCount Value="107"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mfrmNavy.pas"/>
+        <UnitName Value="MfrmNavy"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="6663"/>
+        <CursorPos X="13" Y="6673"/>
+        <UsageCount Value="149"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\objpas\sysutils\datih.inc"/>
+        <EditorIndex Value="28"/>
+        <TopLine Value="137"/>
+        <CursorPos X="84" Y="155"/>
+        <UsageCount Value="125"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\objpas\sysutils\sysinth.inc"/>
+        <EditorIndex Value="27"/>
+        <TopLine Value="51"/>
+        <CursorPos X="3" Y="134"/>
+        <UsageCount Value="125"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="26"/>
+        <TopLine Value="190"/>
+        <CursorPos X="10" Y="131"/>
+        <UsageCount Value="105"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\Xbl.pas"/>
+        <UnitName Value="xbl"/>
+        <EditorIndex Value="25"/>
+        <CursorPos X="3" Y="15"/>
+        <UsageCount Value="105"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\geoidnw.pas"/>
+        <EditorIndex Value="15"/>
+        <CursorPos Y="6"/>
+        <UsageCount Value="104"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ConLamb.pas"/>
+        <UnitName Value="Conlamb"/>
+        <EditorIndex Value="24"/>
+        <TopLine Value="34"/>
+        <CursorPos X="5" Y="51"/>
+        <UsageCount Value="89"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\NevaUtil.pas"/>
+        <UnitName Value="nevautil"/>
+        <EditorIndex Value="12"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\MINFUN.PAS"/>
+        <UnitName Value="MinFun"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="22"/>
+        <CursorPos X="25" Y="38"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\inc\ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="151"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2252" TopLine="2228"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2470" TopLine="2458"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2761" Column="132" TopLine="2737"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="1064" Column="94" TopLine="1048"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="1065" Column="99" TopLine="1048"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2749" Column="52" TopLine="2722"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2750" Column="90" TopLine="2723"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2751" Column="96" TopLine="2724"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2752" Column="100" TopLine="2725"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2753" Column="99" TopLine="2726"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2754" Column="89" TopLine="2727"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2756" Column="55" TopLine="2729"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2757" Column="95" TopLine="2730"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2758" Column="101" TopLine="2731"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2759" Column="105" TopLine="2732"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2760" Column="104" TopLine="2733"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="3182" Column="6" TopLine="3165"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="3178" Column="3" TopLine="3157"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="9" Column="22"/>
+      </Position>
+      <Position>
+        <Filename Value="uNormstr.pas"/>
+        <Caret Line="8" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="UFrmnavy.pas"/>
+        <Caret Line="787" TopLine="775"/>
+      </Position>
+      <Position>
+        <Filename Value="UFrmnavy.pas"/>
+        <Caret Line="768" Column="29" TopLine="760"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="872" Column="11" TopLine="867"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="1046" Column="7" TopLine="1037"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2662" Column="4" TopLine="2645"/>
+      </Position>
+      <Position>
+        <Filename Value="UconFrm.pas"/>
+        <Caret Line="2476" Column="54" TopLine="2459"/>
+      </Position>
+      <Position>
+        <Filename Value="NavScale.pas"/>
+        <Caret Line="8" Column="29"/>
+      </Position>
+      <Position>
+        <Filename Value="UFrmnavy.pas"/>
+        <Caret Line="768" Column="29" TopLine="760"/>
+      </Position>
+      <Position>
+        <Filename Value="UFrmnavy.pas"/>
+        <Caret Line="818" Column="8" TopLine="800"/>
+      </Position>
+      <Position>
+        <Filename Value="UFrmnavy.pas"/>
+        <Caret Line="996" Column="7" TopLine="989"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

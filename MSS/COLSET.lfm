@@ -1,0 +1,31 @@
+object ColSetForm: TColSetForm
+  Left = 168
+  Top = 171
+  BorderStyle = bsDialog
+  Caption = 'Выбор цветов'
+  ClientHeight = 216
+  ClientWidth = 401
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  PixelsPerInch = 96
+  object ListBox1: TListBox
+    Left = 8
+    Top = 32
+    Width = 185
+    Height = 161
+    ItemHeight = 13
+    TabOrder = 0
+  end
+  object ListBox2: TListBox
+    Left = 208
+    Top = 32
+    Width = 185
+    Height = 161
+    ItemHeight = 13
+    TabOrder = 1
+  end
+end

@@ -1,0 +1,42 @@
+object Form_export: TForm_export
+  Left = 797
+  Height = 124
+  Top = 481
+  Width = 206
+  BorderStyle = bsDialog
+  Caption = 'Form_export'
+  ClientHeight = 124
+  ClientWidth = 206
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.0.4'
+  object Label_TiffRes: TLabel
+    Left = 117
+    Height = 13
+    Top = 33
+    Width = 14
+    Caption = 'dpi'
+  end
+  object TiffRes: TSpinEdit
+    Left = 55
+    Height = 21
+    Top = 30
+    Width = 56
+    TabOrder = 0
+    Value = 300
+  end
+  object BitBtn_Ok: TBitBtn
+    Left = 55
+    Height = 25
+    Top = 91
+    Width = 75
+    Caption = 'Да'
+    ModalResult = 1
+    OnClick = BitBtn_OkClick
+    TabOrder = 1
+  end
+end

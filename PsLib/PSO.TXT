@@ -1,0 +1,160 @@
+{PostScript Operators:}
+
+{XXX:}
+
+procedure pso_tree;
+
+{Stack:}
+procedure pso_pop;
+procedure pso_exch;
+procedure pso_dup;
+procedure pso_copy;
+procedure pso_index;
+procedure pso_roll;
+procedure pso_clear;
+procedure pso_count;
+procedure pso_mark;
+procedure pso_counttomark;
+
+{Math:}
+procedure pso_add;
+procedure pso_div;
+procedure pso_idiv;
+procedure pso_mod;
+procedure pso_mul;
+procedure pso_sub;
+procedure pso_neg;
+procedure pso_round;
+procedure pso_sqrt;
+procedure pso_atan;
+procedure pso_cos;
+procedure pso_sin;
+procedure pso_exp;
+
+{Array:}
+procedure pso_array;
+{procedure pso_mark;}  {"[": Stack}
+procedure pso_array_to_mark; {"]"}
+procedure pso_length;
+{procedure pso_get;}  {Dict}
+{procedure pso_put;}  {Dict}
+procedure pso_getinterval;
+procedure pso_putinterval;
+procedure pso_astore;
+procedure pso_aload;
+{procedure pso_copy;}  {Stack}
+procedure pso_forall;
+
+{Dict:}
+procedure pso_dict;
+{procedure pso_mark;}  {"<<": Stack}
+procedure pso_dict_to_mark; {">>"}
+{procedure pso_length;}        {Array}
+procedure pso_begin;
+procedure pso_end;
+procedure pso_def;
+{procedure pso_def;}   {GS: "odef" ???}
+procedure pso_load;
+procedure pso_get;
+procedure pso_put;
+procedure pso_known;
+procedure pso_where;
+{procedure pso_copy;}   {Stack}
+{procedure pso_forall;} {Array}
+procedure pso_currentdict;
+procedure pso_systemdict;
+procedure pso_userdict;
+procedure pso_globaldict;
+{procedure pso_statusdict;}   {- in systemdict}
+procedure pso_countdictstack;
+
+{String:}
+procedure pso_string;
+{procedure pso_length;}        {Array}
+{procedure pso_get;}           {Dict}
+{procedure pso_put;}           {Dict}
+{procedure pso_getinterval;}   {Array}
+{procedure pso_putinterval;}   {Array}
+{procedure pso_copy;}          {Stack}
+{procedure pso_forall;}        {Array}
+procedure pso_anchorsearch;
+procedure pso_search;
+procedure pso_currentstring;   {xxx}
+
+{Bool:}
+procedure pso_eq;
+procedure pso_ne;
+procedure pso_ge;
+procedure pso_gt;
+procedure pso_le;
+procedure pso_lt;
+
+procedure pso_and;
+procedure pso_not;
+procedure pso_or;
+procedure pso_xor;
+
+procedure pso_true;
+procedure pso_false;
+
+{Control:}
+procedure pso_exec;
+procedure pso_if;
+procedure pso_ifelse;
+procedure pso_for;
+procedure pso_repeat;
+procedure pso_loop;
+{
+exit_flag yes: for,loop,repeat,forall
+no:  cshow,filenameforall,kshow,pathforall,resourceforall
+}
+procedure pso_exit;
+procedure pso_stop;
+procedure pso_stopped;
+procedure pso_quit;
+
+{Type:}
+procedure pso_type;
+procedure pso_cvlit;
+procedure pso_cvx;
+procedure pso_xcheck;
+procedure pso_cvi;
+procedure pso_cvn;
+procedure pso_cvs;
+
+{File:}
+procedure pso_file;
+procedure pso_closefile;
+procedure pso_readline;    {file str -> substr bool}
+procedure pso_token;       {file token -> any true || false}
+procedure pso_run;
+procedure pso_runlibfile;  {GS}
+procedure pso_findlibfile; {GS: name -> path file true || name false}
+procedure pso_currentfile;
+procedure pso_print;
+procedure pso_pstack;
+
+{VM:}
+procedure pso_save;
+procedure pso_restore;
+
+{Misc:}
+procedure pso_bind;
+procedure pso_null;
+procedure pso__confirm;  {GS: (s) .confirm ->}
+procedure pso_getenv;    {GS: (s) .getenv -> (s) _1 || _0}
+
+{GState:}
+
+{Coord:}
+procedure pso_matrix;
+
+{Path:}
+
+{Paint:}
+
+{Device:}
+
+{Font:}
+
+

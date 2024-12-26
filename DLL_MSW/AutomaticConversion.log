@@ -1,0 +1,317 @@
+Msw.lpi Note: К параметрам пользователя добавлены определения -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL
+ Progress: Найдены все файлы модулей
+Msw.lpr(1,9) Note: Имя модуля msw исправлено на Msw.
+Msw.lpr(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Преобразование файлов модулей, принадлежащих проекту/пакету ***
+Wcmn.pas Note: Модуль "windows" в выражении Uses заменён на "LMessages".
+Msw.lpi Note: Пакет richmemopackage добавлен в качестве зависимости.
+Arrayx.pas Note: Кодировка изменена с cp1251 на UTF-8
+Arrayx.pas(3,12) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Arrayx.pas(111,3) Note: Регистр имени модуля "nums" изменён. Новое имя: "Nums".
+Arrayx.pas(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+llib.pas Note: Кодировка изменена с cp1251 на UTF-8
+llib.pas(4,6) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+llib.pas(4,14) Note: Регистр имени модуля "nums" изменён. Новое имя: "Nums".
+llib.pas(4,26) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+llib.pas(164,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+LLIB.PAS(2,6) Note: Имя модуля llib исправлено на LLIB.
+LLIB.PAS(2,11) Note: После имени модуля добавлена директива MODE Delphi.
+main.pas Note: Кодировка изменена с cp1251 на UTF-8
+main.pas(7,31) Note: Регистр имени модуля "msfile" изменён. Новое имя: "Msfile".
+main.pas(31,25) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+main.pas(31,31) Note: Регистр имени модуля "chara" изменён. Новое имя: "CHARA".
+main.pas(31,38) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+main.pas(32,3) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+main.pas(32,12) Note: Регистр имени модуля "dmlib" изменён. Новое имя: "Dmlib".
+main.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+main.pas(5,11) Note: После имени модуля добавлена директива MODE Delphi.
+Msfile.pas Note: Кодировка изменена с cp1251 на UTF-8
+Msfile.pas(5,3) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+Msfile.pas(5,9) Note: Регистр имени модуля "filex" изменён. Новое имя: "Filex".
+Msfile.pas(5,16) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+Msfile.pas(5,24) Note: Регистр имени модуля "color" изменён. Новое имя: "Color".
+Msfile.pas(133,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Msfile.pas(133,14) Note: Регистр имени модуля "runline2" изменён. Новое имя: "RUNLINE2".
+Msfile.pas(133,24) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+Msfile.pas(134,17) Note: Регистр имени модуля "sun" изменён. Новое имя: "SUN".
+Msfile.pas(134,22) Note: Регистр имени модуля "dline" изменён. Новое имя: "DLINE".
+Msfile.pas(134,29) Note: Регистр имени модуля "kri_dp" изменён. Новое имя: "KRI_DP".
+Msfile.pas(134,37) Note: Регистр имени модуля "steps" изменён. Новое имя: "STEPS".
+Msfile.pas(134,44) Note: Регистр имени модуля "l2" изменён. Новое имя: "L2".
+Msfile.pas(135,3) Note: Регистр имени модуля "formsx" изменён. Новое имя: "FORMSX".
+Msfile.pas(135,11) Note: Регистр имени модуля "roads" изменён. Новое имя: "ROADS".
+Msfile.pas(135,18) Note: Регистр имени модуля "volna" изменён. Новое имя: "VOLNA".
+Msfile.pas(135,25) Note: Регистр имени модуля "gradfill" изменён. Новое имя: "GRADFILL".
+Msfile.pas(135,35) Note: Регистр имени модуля "mosaic" изменён. Новое имя: "MOSAIC".
+Msfile.pas(137,3) Note: Регистр имени модуля "dmlib" изменён. Новое имя: "Dmlib".
+Msfile.pas(137,10) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+Msfile.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+Msfile.pas(1,6) Note: Имя модуля msfile исправлено на Msfile.
+Msfile.pas(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+Filex.pas Note: Кодировка изменена с cp1251 на UTF-8
+Filex.pas(3,15) Note: Регистр имени модуля "progress" изменён. Новое имя: "Progress".
+Filex.pas(60,16) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Filex.pas(1,6) Note: Имя модуля filex исправлено на Filex.
+Filex.pas(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+Progress.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+Progress.pas(1,6) Note: Имя модуля progress исправлено на Progress.
+Progress.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+Color.pas Note: Кодировка изменена с cp1251 на UTF-8
+Color.pas(6,3) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+Color.pas(102,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Color.pas(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+gcx.pas Note: Кодировка изменена с cp1251 на UTF-8
+gcx.pas(5,3) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+gcx.pas(5,41) Note: Регистр имени модуля "color" изменён. Новое имя: "Color".
+gcx.pas(219,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+gcx.pas(219,39) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+gcx.pas(1,10) Note: После имени модуля добавлена директива MODE Delphi.
+flib.pas(23,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+flib.pas(23,12) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+flib.pas(23,18) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+FLIB.PAS(2,6) Note: Имя модуля flib исправлено на FLIB.
+FLIB.PAS(2,11) Note: После имени модуля добавлена директива MODE Delphi.
+hline.pas Note: Кодировка изменена с cp1251 на UTF-8
+hline.pas(4,37) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+hline.pas(43,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+hline.pas(43,24) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+hline.pas(43,39) Note: Регистр имени модуля "msfile" изменён. Новое имя: "Msfile".
+hline.pas(2,12) Note: После имени модуля добавлена директива MODE Delphi.
+sun.pas Note: Кодировка изменена с cp1251 на UTF-8
+sun.pas(3,6) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+sun.pas(15,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+sun.pas(15,43) Note: Регистр имени модуля "msfile" изменён. Новое имя: "Msfile".
+SUN.PAS(1,6) Note: Имя модуля sun исправлено на SUN.
+SUN.PAS(1,10) Note: После имени модуля добавлена директива MODE Delphi.
+hl_dp.pas Note: Кодировка изменена с cp1251 на UTF-8
+hl_dp.pas(28,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+hl_dp.pas(28,27) Note: Регистр имени модуля "runline2" изменён. Новое имя: "RUNLINE2".
+hl_dp.pas(29,3) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+hl_dp.pas(29,11) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+hl_dp.pas(29,23) Note: Регистр имени модуля "dline" изменён. Новое имя: "DLINE".
+hl_dp.pas(2,12) Note: После имени модуля добавлена директива MODE Delphi.
+dline.pas Note: Кодировка изменена с cp1251 на UTF-8
+dline.pas(6,3) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+dline.pas(6,11) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+dline.pas(28,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+DLINE.PAS(2,6) Note: Имя модуля dline исправлено на DLINE.
+DLINE.PAS(2,12) Note: После имени модуля добавлена директива MODE Delphi.
+kri_dp.pas Note: Кодировка изменена с cp1251 на UTF-8
+kri_dp.pas(5,3) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+kri_dp.pas(19,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+kri_dp.pas(19,27) Note: Регистр имени модуля "runline2" изменён. Новое имя: "RUNLINE2".
+kri_dp.pas(20,3) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+kri_dp.pas(20,11) Note: Регистр имени модуля "dline" изменён. Новое имя: "DLINE".
+kri_dp.pas(20,18) Note: Регистр имени модуля "krivizna" изменён. Новое имя: "KRIVIZNA".
+KRI_DP.PAS(2,6) Note: Имя модуля kri_dp исправлено на KRI_DP.
+KRI_DP.PAS(2,13) Note: После имени модуля добавлена директива MODE Delphi.
+dll_kri.pas(3,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+DLL_KRI.PAS(1,6) Note: Имя модуля dll_kri исправлено на DLL_KRI.
+DLL_KRI.PAS(1,14) Note: После имени модуля добавлена директива MODE Delphi.
+krivizna.pas Note: Кодировка изменена с cp1251 на UTF-8
+krivizna.pas(11,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+krivizna.pas(11,12) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+KRIVIZNA.PAS(1,6) Note: Имя модуля krivizna исправлено на KRIVIZNA.
+KRIVIZNA.PAS(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+RUNLINE2.PAS(35,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+RUNLINE2.PAS Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+RUNLINE2.PAS(1,6) Note: Имя модуля runline2 исправлено на RUNLINE2.
+RUNLINE2.PAS(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+steps.pas Note: Кодировка изменена с cp1251 на UTF-8
+steps.pas(3,6) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+steps.pas(18,6) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+STEPS.PAS(1,6) Note: Имя модуля steps исправлено на STEPS.
+STEPS.PAS(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+CMN.PAS Note: Кодировка изменена с cp1251 на UTF-8
+CMN.PAS(3,50) Note: Регистр имени модуля "dmlib" изменён. Новое имя: "Dmlib".
+CMN.PAS Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+CMN.PAS(1,6) Note: Имя модуля cmn исправлено на CMN.
+CMN.PAS(1,10) Note: После имени модуля добавлена директива MODE Delphi.
+l2.pas Note: Кодировка изменена с cp1251 на UTF-8
+l2.pas(3,6) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+l2.pas(13,6) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+l2.pas(13,42) Note: Регистр имени модуля "dline" изменён. Новое имя: "DLINE".
+L2.PAS(1,6) Note: Имя модуля l2 исправлено на L2.
+L2.PAS(1,9) Note: После имени модуля добавлена директива MODE Delphi.
+formsx.pas Note: Кодировка изменена с cp1251 на UTF-8
+formsx.pas(3,31) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+FORMSX.PAS(1,6) Note: Имя модуля formsx исправлено на FORMSX.
+FORMSX.PAS(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+roads.pas Note: Кодировка изменена с cp1251 на UTF-8
+roads.pas(3,6) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+ROADS.PAS(1,6) Note: Имя модуля roads исправлено на ROADS.
+ROADS.PAS(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+llibx.pas Note: Кодировка изменена с cp1251 на UTF-8
+llibx.pas(6,6) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+llibx.pas(149,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+llibx.pas(149,12) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+llibx.pas(4,12) Note: После имени модуля добавлена директива MODE Delphi.
+volna.pas Note: Кодировка изменена с cp1251 на UTF-8
+volna.pas(6,6) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+volna.pas(19,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+volna.pas(19,29) Note: Регистр имени модуля "curve" изменён. Новое имя: "Curve".
+volna.pas(19,43) Note: Регистр имени модуля "runline2" изменён. Новое имя: "RUNLINE2".
+VOLNA.PAS(4,6) Note: Имя модуля volna исправлено на VOLNA.
+VOLNA.PAS(4,12) Note: После имени модуля добавлена директива MODE Delphi.
+curve.pas Note: Кодировка изменена с cp1251 на UTF-8
+curve.pas(30,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Curve.pas(5,6) Note: Имя модуля curve исправлено на Curve.
+Curve.pas(5,12) Note: После имени модуля добавлена директива MODE Delphi.
+gradfill.pas Note: Кодировка изменена с cp1251 на UTF-8
+gradfill.pas(3,6) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+gradfill.pas(3,14) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+gradfill.pas(3,39) Note: Регистр имени модуля "msfile" изменён. Новое имя: "Msfile".
+gradfill.pas(3,47) Note: Регистр имени модуля "color" изменён. Новое имя: "Color".
+gradfill.pas(63,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+gradfill.pas(63,12) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+gradfill.pas(63,17) Note: Регистр имени модуля "steps" изменён. Новое имя: "STEPS".
+GRADFILL.PAS(1,6) Note: Имя модуля gradfill исправлено на GRADFILL.
+GRADFILL.PAS(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+chara.pas(13,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+CHARA.PAS(1,6) Note: Имя модуля chara исправлено на CHARA.
+CHARA.PAS(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+mosaic.pas Note: Кодировка изменена с cp1251 на UTF-8
+MOSAIC.PAS(2,6) Note: Имя модуля mosaic исправлено на MOSAIC.
+MOSAIC.PAS(2,13) Note: После имени модуля добавлена директива MODE Delphi.
+matx.pas Note: Кодировка изменена с cp1251 на UTF-8
+matx.pas(1,11) Note: После имени модуля добавлена директива MODE Delphi.
+Dmlib.pas(13,3) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+Dmlib.pas(219,3) Note: Регистр имени модуля "Dmw_use" изменён. Новое имя: "dmw_Use".
+dm_util.pas(7,24) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+dmlib0.pas Note: Кодировка изменена с cp1251 на UTF-8
+dmlib0.pas(55,3) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+dmlib0.pas(56,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+dmlib0.pas(4,13) Note: После имени модуля добавлена директива MODE Delphi.
+add2dm.pas Note: Кодировка изменена с cp1251 на UTF-8
+add2dm.pas(3,53) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+add2dm.pas(54,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+add2dm.pas(54,12) Note: Регистр имени модуля "cmn" изменён. Новое имя: "CMN".
+add2dm.pas(54,23) Note: Регистр имени модуля "filex" изменён. Новое имя: "Filex".
+add2dm.pas(54,38) Note: Регистр имени модуля "dmlib" изменён. Новое имя: "Dmlib".
+add2dm.pas(54,45) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+add2dm.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+add2dm.pas(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+dm_expo.pas Note: Кодировка изменена с cp1251 на UTF-8
+dm_expo.pas(25,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+dm_expo.pas(25,31) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+dm_expo.pas(25,40) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+dm_expo.pas(25,49) Note: Регистр имени модуля "dmlib" изменён. Новое имя: "Dmlib".
+dm_expo.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+dm_expo.pas(11,14) Note: После имени модуля добавлена директива MODE Delphi.
+dm_expo_dlgs.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+dm_expo_dlgs.pas(1,19) Note: После имени модуля добавлена директива MODE Delphi.
+check_dm_xy.pas(24,21) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+check_dm_xy.pas(24,38) Note: Регистр имени модуля "Dmw_use" изменён. Новое имя: "dmw_Use".
+ : 
+ : *** Преобразование вновь обнаруженных файлов модулей ***
+Psarrays.pas(5,3) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+Psarrays.pas(5,11) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+Psarrays.pas(5,18) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+Psarrays.pas(42,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Psarrays.pas(42,12) Note: Регистр имени модуля "psdicts" изменён. Новое имя: "Psdicts".
+Psarrays.pas(42,21) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+Psarrays.pas(1,6) Note: Имя модуля psarrays исправлено на Psarrays.
+Psarrays.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+Psdicts.pas(8,3) Note: Регистр имени модуля "arrayx" изменён. Новое имя: "Arrayx".
+Psdicts.pas(8,11) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+Psdicts.pas(8,18) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+Psdicts.pas(66,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Psdicts.pas(66,12) Note: Регистр имени модуля "psstacks" изменён. Новое имя: "Psstacks".
+Psdicts.pas(66,22) Note: Регистр имени модуля "psnames" изменён. Новое имя: "PSNAMES".
+Psdicts.pas(66,31) Note: Регистр имени модуля "pslogs" изменён. Новое имя: "PSLOGS".
+Psdicts.pas(66,39) Note: Регистр имени модуля "pso" изменён. Новое имя: "Pso".
+Psdicts.pas(66,44) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+Psdicts.pas(1,6) Note: Имя модуля psdicts исправлено на Psdicts.
+Psdicts.pas(1,14) Note: После имени модуля добавлена директива MODE Delphi.
+PSLIB.PAS Note: Кодировка изменена с cp1251 на UTF-8
+PSLIB.PAS(24,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+PSLIB.PAS(24,9) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+PSLIB.PAS(24,14) Note: Регистр имени модуля "pso" изменён. Новое имя: "Pso".
+PSLIB.PAS(24,19) Note: Регистр имени модуля "psstacks" изменён. Новое имя: "Psstacks".
+PSLIB.PAS(24,29) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+PSLIB.PAS(24,36) Note: Регистр имени модуля "pslogs" изменён. Новое имя: "PSLOGS".
+PSLIB.PAS(24,44) Note: Регистр имени модуля "psdicts" изменён. Новое имя: "Psdicts".
+PSLIB.PAS(1,6) Note: Имя модуля pslib исправлено на PSLIB.
+PSLIB.PAS(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+Psmat.pas Note: Кодировка изменена с cp1251 на UTF-8
+Psmat.pas(3,6) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+Psmat.pas(49,6) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+Psmat.pas(49,11) Note: Регистр имени модуля "psarrays" изменён. Новое имя: "Psarrays".
+Psmat.pas(49,21) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+Psmat.pas(1,6) Note: Имя модуля psmat исправлено на Psmat.
+Psmat.pas(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+PSNAMES.PAS(24,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+PSNAMES.PAS(1,6) Note: Имя модуля psnames исправлено на PSNAMES.
+PSNAMES.PAS(1,14) Note: После имени модуля добавлена директива MODE Delphi.
+PSOBJ.PAS Note: Кодировка изменена с cp1251 на UTF-8
+PSOBJ.PAS(3,6) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+PSOBJ.PAS(109,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+PSOBJ.PAS(109,9) Note: Регистр имени модуля "psstacks" изменён. Новое имя: "Psstacks".
+PSOBJ.PAS(109,19) Note: Регистр имени модуля "psvms" изменён. Новое имя: "PSVMS".
+PSOBJ.PAS(109,26) Note: Регистр имени модуля "psdicts" изменён. Новое имя: "Psdicts".
+PSOBJ.PAS(109,35) Note: Регистр имени модуля "psnames" изменён. Новое имя: "PSNAMES".
+PSOBJ.PAS(109,44) Note: Регистр имени модуля "psarrays" изменён. Новое имя: "Psarrays".
+PSOBJ.PAS(109,54) Note: Регистр имени модуля "psfiles" изменён. Новое имя: "PSFILES".
+PSOBJ.PAS(110,3) Note: Регистр имени модуля "pso" изменён. Новое имя: "Pso".
+PSOBJ.PAS(110,8) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+PSOBJ.PAS(1,6) Note: Имя модуля psobj исправлено на PSOBJ.
+PSOBJ.PAS(1,12) Note: После имени модуля добавлена директива MODE Delphi.
+PSOBJX.PAS(35,6) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+PSOBJX.PAS(35,12) Note: Регистр имени модуля "psscan" изменён. Новое имя: "PSSCAN".
+PSOBJX.PAS(35,20) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+PSOBJX.PAS(2,6) Note: Имя модуля psobjx исправлено на PSOBJX.
+PSOBJX.PAS(2,13) Note: После имени модуля добавлена директива MODE Delphi.
+PSSCAN.PAS Note: Кодировка изменена с cp1251 на UTF-8
+PSSCAN.PAS(20,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+PSSCAN.PAS(20,9) Note: Регистр имени модуля "pso" изменён. Новое имя: "Pso".
+PSSCAN.PAS(20,14) Note: Регистр имени модуля "psstacks" изменён. Новое имя: "Psstacks".
+PSSCAN.PAS(20,24) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+PSSCAN.PAS(20,31) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+PSSCAN.PAS(20,39) Note: Регистр имени модуля "psarrays" изменён. Новое имя: "Psarrays".
+PSSCAN.PAS(20,49) Note: Регистр имени модуля "psdicts" изменён. Новое имя: "Psdicts".
+PSSCAN.PAS(20,58) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+PSSCAN.PAS(1,6) Note: Имя модуля psscan исправлено на PSSCAN.
+PSSCAN.PAS(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+Psstacks.pas Note: Кодировка изменена с cp1251 на UTF-8
+Psstacks.pas(5,6) Note: Регистр имени модуля "psarrays" изменён. Новое имя: "Psarrays".
+Psstacks.pas(5,16) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+Psstacks.pas(5,23) Note: Регистр имени модуля "psdicts" изменён. Новое имя: "Psdicts".
+Psstacks.pas(77,3) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+Psstacks.pas(77,9) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+Psstacks.pas(77,17) Note: Регистр имени модуля "pso" изменён. Новое имя: "Pso".
+Psstacks.pas(77,22) Note: Регистр имени модуля "psx" изменён. Новое имя: "PSX".
+Psstacks.pas(1,6) Note: Имя модуля psstacks исправлено на Psstacks.
+Psstacks.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+PSX.PAS Note: Кодировка изменена с cp1251 на UTF-8
+PSX.PAS(5,3) Note: Регистр имени модуля "pslogs" изменён. Новое имя: "PSLOGS".
+PSX.PAS(5,11) Note: Регистр имени модуля "psnames" изменён. Новое имя: "PSNAMES".
+PSX.PAS(5,20) Note: Регистр имени модуля "psvms" изменён. Новое имя: "PSVMS".
+PSX.PAS(5,27) Note: Регистр имени модуля "psobjx" изменён. Новое имя: "PSOBJX".
+PSX.PAS(57,3) Note: Регистр имени модуля "psobj" изменён. Новое имя: "PSOBJ".
+PSX.PAS(57,10) Note: Регистр имени модуля "pso" изменён. Новое имя: "Pso".
+PSX.PAS(57,15) Note: Регистр имени модуля "psfiles" изменён. Новое имя: "PSFILES".
+PSX.PAS(57,24) Note: Регистр имени модуля "wcmn" изменён. Новое имя: "Wcmn".
+PSX.PAS(57,30) Note: Регистр имени модуля "pscmn" изменён. Новое имя: "PSCMN".
+PSX.PAS(57,37) Note: Регистр имени модуля "filex" изменён. Новое имя: "Filex".
+PSX.PAS(58,3) Note: Регистр имени модуля "psstacks" изменён. Новое имя: "Psstacks".
+PSX.PAS(58,13) Note: Регистр имени модуля "psgstate" изменён. Новое имя: "PSGSTATE".
+PSX.PAS(58,23) Note: Регистр имени модуля "list" изменён. Новое имя: "List".
+PSX.PAS(58,29) Note: Регистр имени модуля "pspath" изменён. Новое имя: "PSPATH".
+PSX.PAS Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+PSX.PAS(1,6) Note: Имя модуля psx исправлено на PSX.
+PSX.PAS(1,10) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Исправление списков используемых модулей и файлов форм ***
+Progress.pas Note: Удалено свойство "TextHeight".
+Progress.pas Note: Удалено свойство "OldCreateOrder".
+RUNLINE2.PAS Note: Удалено свойство "TextHeight".
+RUNLINE2.PAS Note: Удалено свойство "OldCreateOrder".
+RUNLINE2.PAS Note: Изменена координата Top компонента TBitBtn с "6" на "4" внутри TPanel.
+RUNLINE2.PAS Note: Изменена координата Left компонента TBitBtn с "216" на "214" внутри TPanel.
+RUNLINE2.PAS Note: Изменена координата Top компонента TLabel с "18" на "16" внутри TPanel.
+RUNLINE2.PAS Note: Изменена координата Left компонента TLabel с "80" на "78" внутри TPanel.
+dm_expo_dlgs.pas Note: Удалено свойство "TextHeight".
+dm_expo_dlgs.pas Note: Удалено свойство "OldCreateOrder".
+ Progress: Преобразование заняло: 00:02:54
+ : Преобразование завершено.

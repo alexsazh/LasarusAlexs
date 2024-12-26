@@ -1,0 +1,16 @@
+object FormXM: TFormXM
+  Left = 361
+  Top = 239
+  Width = 410
+  Height = 174
+  Caption = 'FormXM'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+end

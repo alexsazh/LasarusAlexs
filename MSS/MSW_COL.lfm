@@ -1,0 +1,119 @@
+object ColSepDlg: TColSepDlg
+  Left = 330
+  Height = 217
+  Top = 201
+  Width = 278
+  BorderStyle = bsDialog
+  Caption = 'Цветоделение'
+  ClientHeight = 217
+  ClientWidth = 278
+  Color = clBtnFace
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  ParentFont = True
+  Position = poScreenCenter
+  LCLVersion = '2.2.0.4'
+  object Model: TRadioGroup
+    Left = 7
+    Height = 57
+    Top = 15
+    Width = 135
+    AutoFill = True
+    Caption = 'Цветовая модель'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 37
+    ClientWidth = 131
+    ItemIndex = 0
+    Items.Strings = (
+      'CMYK'
+      'RGB'
+    )
+    OnClick = ModelClick
+    TabOrder = 0
+  end
+  object Nb: TNotebook
+    Left = 149
+    Height = 187
+    Hint = 'Имена цветов, номера и постфиксы имен выходных файлов'
+    Top = 15
+    Width = 119
+    PageIndex = 0
+    TabOrder = 1
+    object Page1: TPage
+      OnBeforeShow = Page1BeforeShow
+      object RGBList: TCheckListBox
+        Left = 0
+        Height = 187
+        Top = 0
+        Width = 119
+        Align = alClient
+        Items.Strings = (
+          'Abris   -a'
+          'Black   -k'
+          'Forest  -g'
+          'Brown   -n'
+          'Orange  -o'
+          'River   -b'
+          'Sea     -s'
+          'Fiolet  -f'
+          'Olivk   -l'
+          'Rel-a   -#a'
+          'Rel-b   -#b'
+          'Rel-c   -#c'
+          'Rel-d   -#d'
+        )
+        ItemHeight = 17
+        TabOrder = 0
+        Data = {
+          0D00000000000000000000000000000000
+        }
+      end
+    end
+    object Page2: TPage
+      object CMYKList: TCheckListBox
+        Left = 0
+        Height = 187
+        Top = 0
+        Width = 119
+        Align = alClient
+        Items.Strings = (
+          'Cyan    -c'
+          'Magenta -m'
+          'Yellow  -y'
+          'Black   -k'
+        )
+        ItemHeight = 17
+        TabOrder = 0
+        Data = {
+          0400000000000000
+        }
+      end
+    end
+  end
+  object Ok: TBitBtn
+    Left = 23
+    Height = 23
+    Top = 125
+    Width = 83
+    Caption = '&Да'
+    Kind = bkOK
+    TabOrder = 2
+  end
+  object Cancel: TBitBtn
+    Left = 23
+    Height = 24
+    Top = 162
+    Width = 83
+    Caption = '&Нет'
+    Kind = bkCancel
+    TabOrder = 3
+  end
+end

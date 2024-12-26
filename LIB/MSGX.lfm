@@ -1,0 +1,26 @@
+object MsgForm: TMsgForm
+  Left = 213
+  Top = 236
+  Caption = 'MsgForm'
+  ClientHeight = 148
+  ClientWidth = 421
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  PixelsPerInch = 120
+  object Label1: TLabel
+    Left = 20
+    Top = 20
+    Width = 375
+    Height = 90
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Label1'
+    ParentShowHint = False
+    ShowHint = True
+    WordWrap = True
+  end
+end

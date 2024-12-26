@@ -1,0 +1,38 @@
+#msversion  1.00		%ps
+#section /context		%ps
+#section /layers	
+
+/l.0  <<>>  l.def	%RunArray ps pop
+#section /objects		%ps
+
+l.0 : 
+/S00000001  [ o.chart 10 [ [10 30 o.a] [45 80 |*[o.a .c.cyan]*[o.l]*| ] ] ]  ;  %TEST
+/L00000002  o.chart ;  %TEST
+
+/A30100031 [o.a] ;  
+/L30400013 [o.l 0.1 [] [/Magenta 1]] ;  
+
+%/A40100011  [o.a /bln]  ;  %TEST
+%/A40100011  |*[o.oa [o.s (forest.eps)] 10 0 5]*[o.l]*|  ;  %TEST
+%/A40100011  |*[o.oa [o.inc (forest.eps)] 10 0 5]*[o.l]*|  ;  %TEST
+%/A40100011  |*[o.oa [o.inc (forest.eps)] 10 0 5]*[o.l]*|  ;  %TEST
+%/A40100011  |*[o.ima [o.s (forest.eps)] 9.5]*[o.l 0.5 [] [/Red 1]]*|  ;  %TEST
+%/A40100011  |*[o.include (forest.eps)]*[o.l 0.5 [] [/Red 1]]*|  ;  %TEST
+/A40100011  [o.shade 100 30 [o.a [/Green 1]] [o.a [/Blue 1]] ] ;
+
+
+%/L40500020  [ o.chart 10 [ [10 30 o.a] [45 80 |*[o.a .c.cyan]*[o.l]*| ] ] ]  ;  %
+%/L40500020  [o.line2area [o.h 0.2 []  0.6 30 .c.red]  6 1 1 ]  ;  %TEST
+/L40500020  [o.l]  ; 
+
+/A70100010  o.a ;
+
+%/T90900502 [o.tline 2 /Pragmatica ] ;
+%/T90900502 [o.tline 2 /Pragmatica [o.l 0.1 [] [/Blue 1]] ] ;
+%/T90900502 [o.t.cc ] ;
+/T90900502 [o.t.c ] ;
+
+#eof
+
+				%RunArray ps pop
+			

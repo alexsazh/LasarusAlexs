@@ -1,0 +1,24 @@
+/ps {pstack ().confirm}def
+
+/x 1 def
+/y (111) def
+/z [1 1 1] def
+/d <<>> def
+globaldict begin /g 1 def end
+/p /def load def
+globaldict currentdict ps pop pop
+
+save /&s exch def
+globaldict currentdict ps pop pop
+
+/x 2 def
+/y (222) def
+/z [2 2 2] def
+d begin /a (qq) def end 
+globaldict begin /g 2 def end
+/p {} def
+globaldict currentdict ps pop pop
+
+&s restore
+
+globaldict currentdict ps pop pop

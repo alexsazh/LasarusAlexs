@@ -1,0 +1,100 @@
+/; /def load def
+/;; {1 index where {pop pop}{def}ifelse} def
+
+/=string 256 string ;;
+
+/store { 1 index where {begin def end} {def} ifelse } bind ;;
+
+/vmstatus {0 0 0} ;;  %level used max
+/readonly {};;
+
+/flush {};;
+/flushfile {pop};;
+
+
+/eoclip {clip};;
+
+/stroke {};;
+/fill {};;
+/eofill {};;
+/colorimage {exch pop  {pop}repeat  4{pop}repeat};;
+/imagemask {5{pop} repeat};;
+
+
+%---FILES:
+
+/writehexstring {pop pop};;
+
+%---FONTS:
+
+/findfont {pop _};;
+/makefont {pop pop _};;
+/scalefont {pop pop _};;
+/setfont {pop};;
+/definefont {pop pop _};;
+/currentfont {_};;
+/selectfont {pop pop};;
+/charpath {pop pop};;
+/stringwidth {pop 10 0};;
+/show {pop};;
+
+%---DEVICE:
+
+/showpage {};;
+/.outputpage {pop pop};;
+/erasepage {};;
+
+statusdict begin
+  /.setpagesize {pop pop} ;;
+end %statusdict
+
+/currentdevice {<< /Name (PageDevice) >>};;
+/getdeviceprops {/dev xd [ dev {} forall};;	% dev -> [ n1 v1 ...
+/putdeviceprops {/dev xd counttomark {pop} repeat pop dev};;  % [ n1 v1 ... dev -> dev
+
+/@dot1  %: x y -> d
+{ dup mul exch dup mul add 1 exch sub } bind def
+
+/setscreen {pop pop pop} ;;  %frec angle proc
+/currentscreen {40 0 /@dot1 load};; 
+
+
+%---GSTATE:
+
+/defaultmatrix {pop matrix};;
+/invertmatrix {pop pop matrix};;
+/currentmatrix {pop matrix};;
+/concatmatrix {pop pop pop matrix} ;;
+
+/setflat {pop};;
+/setlinewidth {pop};;	
+/setlinejoin {pop};;	
+/setlinecap {pop};;	
+/setmiterlimit {pop};;	
+/setdash {pop pop};;	
+/setgray {pop};;
+/setrgbcolor {pop pop pop};;
+/setcmykcolor {pop pop pop pop};;
+/setmatrix {pop};;
+
+/currentflat {1};;
+/currentlinewidth {1};;	
+/currentlinejoin {1};;	
+/currentlinecap {0};;
+/currentmiterlimit {10};;	
+/currentdash {[] 0};;	
+/currentgray {0};; %black
+/currentrgbcolor {0 0 0};;
+/currentcmykcolor {0 0 0 1};;
+/currenmatrix {matrix};;
+
+%---PATH:
+
+/pathbbox {0 0 1 1};; 
+/flattenpath {};;
+/pathforall {pop pop pop pop};;   %!
+
+/rmoveto {pop pop};;
+/rlineto {pop pop};;
+
+%---

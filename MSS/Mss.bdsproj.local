@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012.08.22 17:35:15.365.pas,C:\XXX\BDS\DELPHI\MSW\Unit2.pas=C:\XXX\BDS\DELPHI\LIB\_webtif.pas</Transaction>
+    <Transaction>2012.08.22 17:35:15.365.dfm,C:\XXX\BDS\DELPHI\MSW\Unit2.dfm=C:\XXX\BDS\DELPHI\LIB\_webtif.dfm</Transaction>
+    <Transaction>2012.08.29 19:07:09.394.pas,C:\XXX\BDS\DELPHI\LIB\xOle.pas=</Transaction>
+    <Transaction>2012.09.06 18:52:46.859.pas,C:\XXX\BDS\DELPHI\MSW\Unit1.pas=C:\XXX\BDS\DELPHI\LIB\_webtifdm.pas</Transaction>
+    <Transaction>2012.11.26 12:12:30.079.pas,C:\XXX\BDS\DELPHI\MSW\Unit2.pas=C:\XXX\BDS\DELPHI\LIB\_webmaps.pas</Transaction>
+    <Transaction>2012.11.26 12:12:30.079.dfm,C:\XXX\BDS\DELPHI\MSW\Unit2.dfm=C:\XXX\BDS\DELPHI\LIB\_webmaps.dfm</Transaction>
+    <Transaction>2012.11.26 16:01:58.181.pas,C:\XXX\BDS\DELPHI\MSW\Unit1.pas=C:\XXX\BDS\DELPHI\LIB\_webmap.pas</Transaction>
+    <Transaction>2012.11.26 16:09:03.408.pas,C:\XXX\BDS\DELPHI\MSW\Unit1.pas=C:\XXX\BDS\DELPHI\MSW\dm_util_use.pas</Transaction>
+    <Transaction>2012.11.26 16:12:03.156.pas,C:\XXX\BDS\DELPHI\MSW\dm_util_use.pas=C:\XXX\BDS\DELPHI\LIB\dm_util_use.pas</Transaction>
+    <Transaction>2012.11.26 16:16:36.255.pas,C:\XXX\BDS\DELPHI\LIB\dm_util_use.pas=</Transaction>
+    <Transaction>2012.12.04 20:07:45.982.pas,C:\XXX\BDS\DELPHI\LIB\_webtifdm.pas=</Transaction>
+    <Transaction>2012.12.04 20:25:39.578.pas,C:\XXX\BDS\DELPHI\MSW\Unit1.pas=C:\XXX\BDS\DELPHI\LIB\_webcmn.pas</Transaction>
+    <Transaction>2012.12.05 01:02:56.494.pas,C:\XXX\BDS\DELPHI\LIB\rlib.pas=</Transaction>
+    <Transaction>2013.12.30 11:54:05.429.pas,C:\XXX\BDS\DELPHI\MSW\Unit1.pas=C:\XXX\BDS\DELPHI\MSW\check_SK.pas</Transaction>
+    <Transaction>2013.12.30 12:11:25.578.pas,C:\XXX\BDS\DELPHI\MSW\check_SK.pas=C:\XXX\BDS\DELPHI\LIB\check_dm_xy.pas</Transaction>
+    <Transaction>2014.01.16 16:50:19.511.pas,C:\XXX\BDS\DELPHI\MSW\Unit2.pas=C:\XXX\BDS\DELPHI\MSW\msw_ps_export.pas</Transaction>
+    <Transaction>2014.01.16 16:50:19.511.dfm,C:\XXX\BDS\DELPHI\MSW\Unit2.dfm=C:\XXX\BDS\DELPHI\MSW\msw_ps_export.dfm</Transaction>
+    <Transaction>2014.01.16 18:58:57.119.pas,C:\XXX\BDS\DELPHI\MSW\msw_ps_export.pas=</Transaction>
+    <Transaction>2014.01.16 18:58:57.119.dfm,C:\XXX\BDS\DELPHI\MSW\msw_ps_export.dfm=</Transaction>
+    <Transaction>2015.03.29 23:28:40.820.pas,C:\XXX\BDS\DELPHI_2006\MSS\MSS_WM.pas=C:\XXX\BDS\DELPHI_2006\MSS\dll_mss_pick2.pas</Transaction>
+    <Transaction>2015.03.29 23:28:40.820.dfm,C:\XXX\BDS\DELPHI_2006\MSS\MSS_WM.dfm=C:\XXX\BDS\DELPHI_2006\MSS\dll_mss_pick2.dfm</Transaction>
+    <Transaction>2015.03.29 23:29:11.711.pas,C:\XXX\BDS\DELPHI_2006\MSS\dll_mss_pick2.pas=</Transaction>
+    <Transaction>2015.03.29 23:29:11.712.dfm,C:\XXX\BDS\DELPHI_2006\MSS\dll_mss_pick2.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

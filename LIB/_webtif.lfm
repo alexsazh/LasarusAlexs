@@ -1,0 +1,70 @@
+object WebTif1: TWebTif1
+  Left = 720
+  Top = 394
+  Width = 320
+  Height = 315
+  Caption = 'tiff for web'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  object Splitter1: TSplitter
+    Left = 174
+    Top = 0
+    Width = 2
+    Height = 284
+    Align = alRight
+  end
+  object List1: TCheckListBox
+    Left = 0
+    Top = 0
+    Width = 174
+    Height = 284
+    Align = alClient
+    ItemHeight = 12
+    Items.Strings = (
+      '0:'
+      '1:')
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 176
+    Top = 0
+    Width = 136
+    Height = 284
+    Align = alRight
+    TabOrder = 1
+    object Panel2: TPanel
+      Left = 0
+      Top = 247
+      Width = 134
+      Height = 34
+      Align = alBottom
+      TabOrder = 0
+      object BitBtnOk: TBitBtn
+        Left = 27
+        Top = 8
+        Width = 57
+        Height = 19
+        Anchors = [akLeft, akBottom]
+        Caption = 'Да'
+        TabOrder = 0
+        Kind = bkOK
+      end
+    end
+    object Memo1: TMemo
+      Left = 0
+      Top = 0
+      Width = 134
+      Height = 248
+      Align = alClient
+      ScrollBars = ssBoth
+      TabOrder = 1
+    end
+  end
+end

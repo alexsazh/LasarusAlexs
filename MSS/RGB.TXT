@@ -1,0 +1,13 @@
+Abris   -a
+Black   -k
+Forest  -g
+Brown   -n
+Orange  -o
+River   -b
+Sea     -s
+Fiolet  -f
+Olivk   -l
+Rel-a   -#a
+Rel-b   -#b
+Rel-c   -#c
+Rel-d   -#d

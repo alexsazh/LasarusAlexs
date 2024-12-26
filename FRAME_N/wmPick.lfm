@@ -1,0 +1,23 @@
+object FPick: TFPick
+  Left = 181
+  Top = 242
+  Width = 559
+  Height = 153
+  Caption = 'Форма указания'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 144
+    Top = 48
+  end
+end

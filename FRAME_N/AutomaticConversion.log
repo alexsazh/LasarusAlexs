@@ -1,0 +1,131 @@
+frame_N.lpi Note: К параметрам пользователя добавлены определения -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL
+ Progress: Найдены все файлы модулей
+frame_N.lpr(1,9) Note: Имя модуля Frame_N исправлено на frame_N.
+frame_N.lpr(1,17) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Преобразование файлов модулей, принадлежащих проекту/пакету ***
+fr_sea.pas Note: Кодировка изменена с cp1251 на UTF-8
+fr_sea.pas(108,35) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+fr_sea.pas(108,42) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+fr_sea.pas(108,50) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+fr_sea.pas(108,86) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+fr_sea.pas(109,32) Note: Регистр имени модуля "MinFun" изменён. Новое имя: "MINFUN".
+fr_sea.pas(109,46) Note: Регистр имени модуля "xbl" изменён. Новое имя: "Xbl".
+fr_sea.pas(109,50) Note: Регистр имени модуля "Conlamb" изменён. Новое имя: "ConLamb".
+fr_sea.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+fr_sea.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+fr_sea.pas(103,13) Note: После имени модуля добавлена директива MODE Delphi.
+UFrmnavy.pas Note: Кодировка изменена с cp1251 на UTF-8
+UFrmnavy.pas(7,21) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+UFrmnavy.pas(7,29) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+UFrmnavy.pas(7,45) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+UFrmnavy.pas(7,60) Note: Регистр имени модуля "MfrmNavy" изменён. Новое имя: "mfrmNavy".
+UFrmnavy.pas(7,79) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+UFrmnavy.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+UFrmnavy.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+UFrmnavy.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+NavyHead.pas Note: Кодировка изменена с cp1251 на UTF-8
+NavyHead.pas Note: Кодировка изменена с cp1251 на UTF-8
+NavyHead.pas(7,29) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+NavyHead.pas(7,37) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+NavyHead.pas(7,46) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+NavyHead.pas(8,21) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+NavyHead.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+NavyHead.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+NavyHead.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+NavScale.pas Note: Кодировка изменена с cp1251 на UTF-8
+NavScale.pas(7,27) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+NavScale.pas(7,35) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+NavScale.pas(7,43) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+NavScale.pas(7,69) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+NavScale.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+NavScale.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+NavScale.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+FR_Nmain.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+FR_Nmain.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+wmPick.pas(6,84) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+wmPick.pas(6,92) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+wmPick.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+wmPick.pas(1,13) Note: После имени модуля добавлена директива MODE Delphi.
+UconFrm.pas Note: Кодировка изменена с cp1251 на UTF-8
+UconFrm.pas(7,48) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+UconFrm.pas(7,66) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+UconFrm.pas(7,75) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+UconFrm.pas(7,84) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+UconFrm.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+UconFrm.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+UconFrm.pas(1,14) Note: После имени модуля добавлена директива MODE Delphi.
+uNormstr.pas Note: Кодировка изменена с cp1251 на UTF-8
+uNormstr.pas(7,48) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+uNormstr.pas(7,66) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+uNormstr.pas(7,75) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+uNormstr.pas(7,84) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+uNormstr.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+uNormstr.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+uNormstr.pas(1,6) Note: Имя модуля UNormstr исправлено на uNormstr.
+uNormstr.pas(1,15) Note: После имени модуля добавлена директива MODE Delphi.
+UArt.pas Note: Кодировка изменена с cp1251 на UTF-8
+UArt.pas(7,38) Note: Регистр имени модуля "MfrmNavy" изменён. Новое имя: "mfrmNavy".
+UArt.pas(7,57) Note: Регистр имени модуля "nevautil" изменён. Новое имя: "NevaUtil".
+UArt.pas(7,75) Note: Регистр имени модуля "dmw_ddw" изменён. Новое имя: "Dmw_ddw".
+UArt.pas(7,84) Note: Регистр имени модуля "dmw_use" изменён. Новое имя: "dmw_Use".
+UArt.pas(7,93) Note: Регистр имени модуля "Otypes" изменён. Новое имя: "OTypes".
+UArt.pas Note: Модуль "Mask" в выражении Uses заменён на "Masks".
+UArt.pas Note: Модуль "Windows" в выражении Uses заменён на "LCLIntf, LCLType, LMessages".
+UArt.pas(1,11) Note: После имени модуля добавлена директива MODE Delphi.
+ : 
+ : *** Исправление списков используемых модулей и файлов форм ***
+UFrmnavy.pas Note: Удалено свойство "TextHeight".
+UFrmnavy.pas Note: Удалено свойство "OldCreateOrder".
+UFrmnavy.pas Note: Модуль "MaskEdit" добавлен в выражение Uses.
+UFrmnavy.pas Note: Изменена координата Top компонента TCheckBox с "24" на "22" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TCheckBox с "56" на "54" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Top компонента TCheckBox с "0" на "0" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TCheckBox с "56" на "54" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Top компонента TCheckBox с "12" на "10" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TCheckBox с "96" на "94" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Top компонента TCheckBox с "12" на "10" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TCheckBox с "16" на "14" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Top компонента TButton с "3" на "1" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TButton с "16" на "14" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Top компонента TButton с "64" на "62" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TButton с "16" на "14" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Top компонента TLabel с "92" на "90" внутри TPanel.
+UFrmnavy.pas Note: Изменена координата Left компонента TLabel с "84" на "82" внутри TPanel.
+NavyHead.pas Note: Удалено свойство "TextHeight".
+NavyHead.pas Note: Удалено свойство "OldCreateOrder".
+NavyHead.pas Note: Модуль "MaskEdit" добавлен в выражение Uses.
+NavScale.pas Note: Удалено свойство "TextHeight".
+NavScale.pas Note: Удалено свойство "OldCreateOrder".
+NavScale.pas Note: Модуль "MaskEdit" добавлен в выражение Uses.
+FR_Nmain.pas Note: Удалено свойство "TextHeight".
+FR_Nmain.pas Note: Удалено свойство "OldCreateOrder".
+wmPick.pas Note: Удалено свойство "TextHeight".
+wmPick.pas Note: Удалено свойство "OldCreateOrder".
+UconFrm.pas Note: Удалено свойство "TextHeight".
+UconFrm.pas Note: Удалено свойство "OldCreateOrder".
+UconFrm.pas Note: Модуль "MaskEdit" добавлен в выражение Uses.
+UconFrm.pas Note: Изменена координата Top компонента TCheckBox с "24" на "22" внутри TPanel.
+UconFrm.pas Note: Изменена координата Left компонента TCheckBox с "56" на "54" внутри TPanel.
+UconFrm.pas Note: Изменена координата Top компонента TCheckBox с "0" на "0" внутри TPanel.
+UconFrm.pas Note: Изменена координата Left компонента TCheckBox с "56" на "54" внутри TPanel.
+UconFrm.pas Note: Изменена координата Top компонента TCheckBox с "12" на "10" внутри TPanel.
+UconFrm.pas Note: Изменена координата Left компонента TCheckBox с "96" на "94" внутри TPanel.
+UconFrm.pas Note: Изменена координата Top компонента TCheckBox с "12" на "10" внутри TPanel.
+UconFrm.pas Note: Изменена координата Left компонента TCheckBox с "16" на "14" внутри TPanel.
+uNormstr.pas Note: Удалено свойство "TextHeight".
+uNormstr.pas Note: Удалено свойство "OldCreateOrder".
+uNormstr.pas Note: Модуль "MaskEdit" добавлен в выражение Uses.
+uNormstr.pas Note: Изменена координата Top компонента TCheckBox с "24" на "22" внутри TPanel.
+uNormstr.pas Note: Изменена координата Left компонента TCheckBox с "56" на "54" внутри TPanel.
+uNormstr.pas Note: Изменена координата Top компонента TCheckBox с "0" на "0" внутри TPanel.
+uNormstr.pas Note: Изменена координата Left компонента TCheckBox с "56" на "54" внутри TPanel.
+uNormstr.pas Note: Изменена координата Top компонента TCheckBox с "12" на "10" внутри TPanel.
+uNormstr.pas Note: Изменена координата Left компонента TCheckBox с "96" на "94" внутри TPanel.
+uNormstr.pas Note: Изменена координата Top компонента TCheckBox с "12" на "10" внутри TPanel.
+uNormstr.pas Note: Изменена координата Left компонента TCheckBox с "16" на "14" внутри TPanel.
+UArt.pas Note: Удалено свойство "TextHeight".
+UArt.pas Note: Удалено свойство "OldCreateOrder".
+UArt.pas Note: Модуль "MaskEdit" добавлен в выражение Uses.
+ Progress: Преобразование заняло: 00:01:19
+ : Преобразование завершено.

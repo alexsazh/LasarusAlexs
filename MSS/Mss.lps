@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Mss.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="66"/>
+        <CursorPos X="9" Y="93"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="MSW_1.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="970"/>
+        <CursorPos X="46" Y="976"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="MSW_PRN.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPrnCnv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="MSW_COL.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ColSepDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="37"/>
+        <CursorPos Y="54"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="msw_ps.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PrintDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="43"/>
+        <CursorPos X="76" Y="53"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Msw_msx.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="24"/>
+        <TopLine Value="220"/>
+        <CursorPos X="58" Y="231"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="msw_x.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Msw_x"/>
+        <EditorIndex Value="18"/>
+        <TopLine Value="416"/>
+        <CursorPos X="21" Y="433"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\dmw_Use.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="30"/>
+        <CursorPos X="3" Y="8"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\OTypes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="14"/>
+        <TopLine Value="2492"/>
+        <CursorPos X="31" Y="2509"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cmdfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="39"/>
+        <CursorPos X="14" Y="17"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="COLSET.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ColSetForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ABOUT.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="25"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="msw_xm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormXM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="96"/>
+        <CursorPos Y="112"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cmn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="42"/>
+        <CursorPos X="3" Y="45"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mapprntest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="3" Y="46"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="help.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="27"/>
+        <TopLine Value="8"/>
+        <CursorPos X="48" Y="21"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\Dmw_ddw.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos X="11" Y="53"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\dmw_wm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="873"/>
+        <CursorPos X="9" Y="890"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\d3_use.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="msw_ps_export.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form_export"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="26"/>
+        <TopLine Value="83"/>
+        <CursorPos X="11" Y="92"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="MSS_WM.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="134"/>
+        <CursorPos Y="151"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\_lnk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="36"/>
+        <TopLine Value="118"/>
+        <CursorPos X="47" Y="117"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\_webcmn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="23" Y="7"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\_webmaps.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="_webmaps1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="268"/>
+        <CursorPos Y="290"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\_webtif.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="WebTif1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="151"/>
+        <CursorPos X="11" Y="170"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\check_dm_xy.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="12"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\dm_util.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="2" Y="5"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\dmcmn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="298"/>
+        <CursorPos X="18" Y="315"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\dmdist0.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="32"/>
+        <TopLine Value="69"/>
+        <CursorPos X="153" Y="82"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Dmlib.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20" Y="12"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Dmwlib.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="23" Y="7"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\EPS.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="25"/>
+        <CursorPos X="50" Y="36"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\GsOpt.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GsOptDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="34"/>
+        <TopLine Value="79"/>
+        <CursorPos Y="101"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\List.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="37" Y="119"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\MSCMN.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\MSGX.PAS"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MsgForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="35"/>
+        <CursorPos X="20" Y="9"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Nums.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Runline.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RunForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="10"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Vlib.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="20" Y="11"/>
+        <UsageCount Value="278"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\wait.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormWait"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="22" Y="9"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Wcmn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="28"/>
+        <TopLine Value="325"/>
+        <CursorPos X="40" Y="331"/>
+        <UsageCount Value="278"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\Color.pas"/>
+        <ComponentName Value="ColorDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="33"/>
+        <CursorPos X="12" Y="4"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\components\lazutils\lconvencoding.pas"/>
+        <UnitName Value="LConvEncoding"/>
+        <EditorIndex Value="31"/>
+        <TopLine Value="127"/>
+        <CursorPos X="22" Y="129"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\win\wininc\redef.inc"/>
+        <EditorIndex Value="29"/>
+        <TopLine Value="321"/>
+        <CursorPos X="23" Y="338"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\RUNX.PAS"/>
+        <UnitName Value="runx"/>
+        <EditorIndex Value="22"/>
+        <CursorPos X="61" Y="19"/>
+        <UsageCount Value="128"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\LLIB.PAS"/>
+        <EditorIndex Value="23"/>
+        <TopLine Value="944"/>
+        <CursorPos Y="961"/>
+        <UsageCount Value="128"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\UTILS\WStrings.pas"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="148"/>
+        <CursorPos X="15" Y="165"/>
+        <UsageCount Value="128"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\objpas\types.pp"/>
+        <UnitName Value="Types"/>
+        <EditorIndex Value="21"/>
+        <TopLine Value="317"/>
+        <CursorPos X="10" Y="333"/>
+        <UsageCount Value="128"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\inc\dynlibs.pas"/>
+        <EditorIndex Value="20"/>
+        <TopLine Value="81"/>
+        <CursorPos X="10" Y="33"/>
+        <UsageCount Value="128"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\lazarus32\fpc\3.2.2\source\rtl\objpas\sysutils\sysunih.inc"/>
+        <EditorIndex Value="19"/>
+        <TopLine Value="24"/>
+        <CursorPos X="18" Y="40"/>
+        <UsageCount Value="127"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="..\UTILS\dmw_wm.pas"/>
+        <Caret Line="8" Column="43"/>
+      </Position>
+      <Position>
+        <Filename Value="..\UTILS\dmw_wm.pas"/>
+        <Caret Line="8" Column="45"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="841" Column="48" TopLine="833"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="842" Column="48" TopLine="834"/>
+      </Position>
+      <Position>
+        <Filename Value="Mss.lpr"/>
+        <Caret Line="93" Column="9" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="msw_x.pas"/>
+        <Caret Line="504" Column="42" TopLine="497"/>
+      </Position>
+      <Position>
+        <Filename Value="msw_x.pas"/>
+        <Caret Line="533" Column="32" TopLine="510"/>
+      </Position>
+      <Position>
+        <Filename Value="msw_x.pas"/>
+        <Caret Line="532" Column="26" TopLine="516"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="541" Column="27" TopLine="525"/>
+      </Position>
+      <Position>
+        <Filename Value="msw_x.pas"/>
+        <Caret Line="521" Column="53" TopLine="504"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="909" Column="67" TopLine="902"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="998" Column="30" TopLine="993"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="1002" Column="136" TopLine="995"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="1009" Column="136" TopLine="1002"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="880" Column="67" TopLine="867"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="136" Column="25" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="724" Column="3" TopLine="703"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="726" Column="3" TopLine="710"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="725" Column="3" TopLine="709"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="4" Column="13"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="82" Column="12" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="159" Column="22" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="320" Column="30" TopLine="293"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="363" Column="28" TopLine="336"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="387" Column="70" TopLine="367"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="385" Column="66" TopLine="367"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="389" Column="18" TopLine="367"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="374" Column="57" TopLine="361"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="962" Column="34" TopLine="950"/>
+      </Position>
+      <Position>
+        <Filename Value="MSW_1.PAS"/>
+        <Caret Line="922" Column="40" TopLine="919"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\LIB\GsOpt.pas"/>
+        <Line Value="65"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>
